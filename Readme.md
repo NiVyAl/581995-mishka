@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Никита Высоцкий](https://up.htmlacademy.ru/adaptive/15/user/581995).
-* Наставник: `Неизвестно`.
+* Наставник: [Гоша Егорян](https://up.htmlacademy.ru/adaptive/15/user/85633).
 
 ---
 
