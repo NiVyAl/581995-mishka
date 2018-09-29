@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body>
+    <header class="page-header"> <!-- блок -->
+      <a class="page-header__logo" href="index.html"> <!-- элемент (почему не микс ведь лого можно использовать и в другом месте?) -->
+        <img class="page-header__logo-image" src="http://placehold.it/86x35">
+      </a>
+
+      <button class="toggle-button page-header__toggle">
+        Открыть меню
+      </button> <!-- микс (в примере почему-то элемент? Хотя такая кнопка может понадобиться где-то еще) -->
+
+      <nav class="main-nav"> <!-- из-за того что сложный делаем независимым блоком -->
+        <ul class="main-nav__list site-list">  <!-- микс -->
+          <li class="site-list__item"><a href="#">Каталог товаров</a></li>
+          <li class="site-list__item"><a href="form.html">Вязание на заказ</a></li>
+          <li class="site-list__item search-button"><a href="#">Поиск по сайту</a></li>
+          <li class="site-list__item cart-button cart-button--header"><a href="#">Корзина: пока пуста</a></li>
+          <!-- к ссылкам обращаться селекторами? -->
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page-catalog">
+      <section class="head">
+        <h1 class="">Каталог товаров</h1>
+      </section>
+
+      <section class="products">
+        <ul class="products__list">
+          <li class="products__item product">
+            <img class="product__image" src="http://placehold.it/150x100">
+
+            <div class="product__info">
+              <div class="product__info__text">
+                <h2 class="product__title">Зайчик-попрыгайчик</h2>
+                <p class="product__characteristic">Рост 30 см, вес 200 г</p>
+              </div>
+
+              <div class="product__info__buy">
+                <p class="product__price">1 200 руб.</p>
+                <button class="cart-button">Добавить в корзину</button>
+              </div>
+            </div>
+
+          </li>
+
+          <li class="products__item product">
+            <img class="product__image" src="http://placehold.it/150x100">
+
+            <div class="product__info">
+              <div class="product__info__text">
+                <h2 class="product__title">Корзинка для белья</h2>
+                <p class="product__characteristic">Диаметр 15 см, высота 10 см</p>
+              </div>
+
+              <div class="product__info__buy">
+                <p class="product__price">690 руб.</p>
+                <button class="cart-button">Добавить в корзину</button>
+              </div>
+            </div>
+
+          </li>
+
+          <li class="products__item product">
+            <img class="product__image" src="http://placehold.it/150x100">
+
+            <div class="product__info">
+              <div class="product__info__text">
+                <h2 class="product__title">Большая корзинка для игрушек</h2>
+                <p class="product__characteristic">Диаметр 30 см, высота 30 см</p>
+              </div>
+
+              <div class="product__info__buy">
+                <p class="product__price">1500 руб.</p>
+                <button class="cart-button">Добавить в корзину</button>
+              </div>
+            </div>
+
+          </li>
+
+          <li class="products__item video-container">
+            <h2 class="video-container__title">Процесс производства</h2>
+            <video class="video-container__video" width="260" height="150"></video>
+            <p class="vide-container__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о     том, как появляются наши товары.
+            </p>
+            <a class="button video-container__button" href="#">Сделать заказ</a>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <ul class="page--footer__social">
+        <li><a href="#"><img src="http://placehold.it/22x21"></a></li>
+        <li><a href="#"><img src="http://placehold.it/15x28"></a></li>
+        <li><a href="#"><img src="http://placehold.it/23x20"></a></li>
+      </ul>
+
+      <div class="page--footer__copyright copyright">
+        <b class="copyright__text">Разработано</b>
+        <a class="copyright__link"><img src="http://placehold.it/27x34"></a>
+      </div>
+    </footer>
+  </body>
+</html>
