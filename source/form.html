@@ -6,27 +6,28 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="http://placehold.it/86x35">
+      <a class="page-header__logo logo" href="index.html">
+        <img class="page-header__logo-image logo-image" src="http://placehold.it/86x35">
       </a>
 
       <button class="toggle-button page-header__toggle">
         Открыть меню
       </button>
 
-      <nav class="main-nav">
-        <ul class="main-nav__list site-list">
+      <nav class="page-header__menu main-nav">
+      <ul class="main-nav__list site-list"> <!-- в демке такое же название -->
           <li class="site-list__item"><a href="catalog.html">Каталог товаров</a></li>
           <li class="site-list__item"><a href="#">Вязание на заказ</a></li>
           <li class="site-list__item search-button"><a href="#">Поиск по сайту</a></li>
-          <li class="site-list__item cart-button"><a href="#">Корзина: пока пуста</a></li>
+          <li class="site-list__item cart-button cart-button--header"><a href="#">Корзина: пока пуста</a></li>
+          <!-- к ссылкам обращаться селекторами? -->
         </ul>
       </nav>
     </header>
 
     <main class="page-form">
       <section class="head">
-        <h1 class="">Вязание на заказ</h1>
+        <h1 class="head__title">Вязание на заказ</h1>
       </section>
 
       <form class="page-form__form order-form">
@@ -34,7 +35,7 @@
           Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую       форму заказа и мы свяжемся с вами, чтобы уточнить детали.
         </header>
 
-        <fieldset class="order-form__fieldset">
+        <fieldset class="order-form__fieldset"> <!-- сложно стилизивать, заменить -->
           <legend class="order-form__title">Тип</legend>
 
           <input type="radio" id="interior" name="type">
@@ -47,23 +48,38 @@
         <fieldset class="order-form__fieldset">
           <legend class="order-form__title">Цвет</legend>
 
-          <input type="checkbox" id="white" name="color">
-          <label for="white">Белый</label>
+          <ul class="color-list">
+            <li class="color-list__item">
+              <input  type="checkbox" id="white" name="color">
+              <label for="white">Белый</label>
+            </li>
 
-          <input type="checkbox" id="gray" name="color">
-          <label for="gray">Серый</label>
+            <li class="color-list__item">
+              <input type="checkbox" id="gray" name="color">
+              <label for="gray">Серый</label>
+            </li>
 
-          <input type="checkbox" id="tiff" name="color">
-          <label for="tiff">«Тиффани»</label>
+            <li class="color-list__item">
+              <input type="checkbox" id="tiff" name="color">
+              <label for="tiff">«Тиффани»</label>
+            </li>
 
-          <input type="checkbox" id="black" name="color">
-          <label for="black">Черный</label>
+            <li class="color-list__item">
+              <input type="checkbox" id="black" name="color">
+              <label for="black">Черный</label>
+            </li>
 
-          <input type="checkbox" id="pink" name="color">
-          <label for="pink">Розовый</label>
+            <li class="color-list__item">
+              <input type="checkbox" id="pink" name="color">
+              <label for="pink">Розовый</label>
+            </li>
 
-          <input type="checkbox" id="orange" name="color">
-          <label for="orange">Оранжевый</label>
+            <li class="color-list__item">
+              <input type="checkbox" id="orange" name="color">
+              <label for="orange">Оранжевый</label>
+            </li>
+          </ul>
+
         </fieldset>
 
         <fieldset class="order-form__fieldset">
@@ -72,10 +88,10 @@
           <label for="name">Имя:</label>
           <input type="text" id="name" placeholder="Введите ваше имя*">
 
-          <label for="name">Фамилия:</label>
+          <label for="surname">Фамилия:</label>
           <input type="text" id="surname" placeholder="Укажите фамилию*">
 
-          <label for="name">Отчество:</label>
+          <label for="patronymic">Отчество:</label>
           <input type="text" id="patronymic" placeholder="Отчество, если желаете">
         </fieldset>
 
@@ -96,19 +112,27 @@
 
         <footer class="order-form__footer">
           <p>*Поля обязательны для заполнения</p>
-          <input class="button order-form__button" type="submit" value="ОТПРАВИТЬ ЗАКАЗ">
+          <button class="button order-form__button" type="submit">ОТПРАВИТЬ           ЗАКАЗ</button>
         </footer>
       </form>
     </main>
 
     <footer class="page-footer">
-      <ul class="page--footer__social">
-        <li><a href="#"><img src="http://placehold.it/22x21"></a></li>
-        <li><a href="#"><img src="http://placehold.it/15x28"></a></li>
-        <li><a href="#"><img src="http://placehold.it/23x20"></a></li>
+      <ul class="page-footer__social social">
+        <li class="social-item">
+          <a class="instagram-link" href="#"><img src="http://placehold.it/22x21"></a>
+        </li>
+
+        <li class="social-item ">
+          <a class="facebook-link" href="#"><img src="http://placehold.it/15x28"></a>
+        </li>
+
+        <li class="social-item">
+          <a class="twitter-link" href="#"><img src="http://placehold.it/23x20"></a>
+        </li>
       </ul>
 
-      <div class="page--footer__copyright copyright">
+      <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано</b>
         <a class="copyright__link"><img src="http://placehold.it/27x34"></a>
       </div>
