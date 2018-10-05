@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
       <a class="page-header__logo logo" href="#">
-        <img class="page-header__logo-image logo__image" src="http://placehold.it/86x35">
+        <img class="page-header__logo-image logo__image" src="img/logo-mobile.svg" width="86" height="35">
       </a>
 
       <button class="toggle-button page-header__toggle">
@@ -17,16 +18,16 @@
       <nav class="page-header__menu main-nav">
       <ul class="main-nav__list site-menu">
         <li class="site-menu__item">
-          <a class="site-menu__link" href="#">Каталог товаров</a>
+          <a class="site-menu__link" href="catalog.html">Каталог товаров</a>
         </li>
         <li class="site-menu__item">
           <a class="site-menu__link" href="form.html">Вязание на заказ</a>
         </li>
         <li class="site-menu__item">
-          <a class="site-menu__link search-button" href="#">Поиск по сайту</a>
+          <a class="site-menu__link site-menu__link--search" href="#">Поиск по сайту</a>
         </li>
         <li class="site-menu__item">
-          <a class="site-menu__link cart-button cart-button--header" href="#">Корзина: пока пуста</a>
+          <a class="site-menu__link site-menu__link--cart" href="#">Корзина: пока пуста</a>
         </li>
       </ul>
       </nav>
@@ -34,19 +35,19 @@
 
 
     <main class="page">
-      <h1 class="page__title page__title__main-page">
+      <h1 class="page__title page__title--main-page wrapper">
         Милые штуки ручной работы для дома
       </h1>
 
       <ul class="categories">
-        <li class="categories__item categories__item--interior">
-          <a href="#">
+        <li class="categories__item">
+          <a class="categories__link categories__link--interior" href="#">
             Предметы интерьера
           </a>
         </li>
 
-        <li class="categories__item categories__item--toys">
-          <a href="#">
+        <li class="categories__item">
+          <a class="categories__link categories__link--toys" href="#">
             Детские игрушки
           </a>
         </li>
@@ -60,23 +61,23 @@
         </p>
 
         <table class="featured__characteristics">
-          <tr>
+          <tr class="featured__table-row">
             <td class="featured__value">Цвет:</td>
             <td class="feature__field">«Тиффани»/серый</td>
           </tr>
 
-          <tr>
+          <tr class="featured__table-row">
             <td class="featured__value">Диаметр:</td>
             <td class="feature__field">25 см</td>
           </tr>
 
-          <tr>
+          <tr class="featured__table-row">
             <td class="featured__value">Высота:</td>
             <td class="feature__field">15 см</td>
           </tr>
         </table>
 
-        <img class="featured__image" src="http://placehold.it/260x315">
+        <img class="featured__image" src="../img/triple-set-mobile@1x.jpg">
         <p class="featured__price">Цена: 990 руб.</p>
         <a class="button featured__button" href="#">Заказать</a>
       </section>
@@ -85,22 +86,22 @@
         <h2 class="about__title">Коротко о нас:</h2>
 
         <ul class="about__list">
-          <li class="about__item">
+          <li class="about__item about__item--flower">
             Экологически чистые материалы
           </li>
-          <li class="about__item">
+          <li class="about__item about__item--money">
             Скандинавский стиль по российской цене
           </li>
-          <li class="about__item">
+          <li class="about__item about__item--heart">
             Увеличивает лайки на фотографиях
           </li>
-          <li class="about__item">
+          <li class="about__item about__item--ball">
             Связано вручную с любовью и умилением
           </li>
-          <li class="about__item">
+          <li class="about__item about__item--rocket">
             Поддержка отечественного производителя
           </li>
-          <li class="about__item">
+          <li class="about__item about__item--gift">
             Поставляется в подарочной упаковке
           </li>
         </ul>
@@ -133,7 +134,7 @@
             <button class="arrow arrow--right">вперед</button>
           </p>
 
-          <a class="button reviews__button" href="#"></a>
+          <a class="button reviews__button" href="#">Написать</a>
         </div>
       </section>
 
@@ -163,26 +164,26 @@
       <ul class="page-footer__social social">
         <li class="social__item">
           <a class="social__link social__link--instagram" href="#">
-            <img class="social__image" src="http://placehold.it/22x21">
+            <img class="social__image" src="../img/icon-insta.svg" width="22" height="21">
           </a>
         </li>
 
         <li class="social__item">
           <a class="social__link social__link--facebook" href="#">
-            <img class="social__image" src="http://placehold.it/15x28">
+            <img class="social__image" src="../img/icon-fb.svg" width="15" height="28">
           </a>
         </li>
 
         <li class="social__item">
           <a class="social__link social__link--twitter" href="#">
-            <img class="social__image" src="http://placehold.it/23x20">
+            <img class="social__image" src="../img/icon-twitter.svg" width="23" height="20">
           </a>
         </li>
       </ul>
 
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано</b>
-        <a class="copyright__link"><img src="http://placehold.it/27x34"></a>
+        <a class="copyright__link"><img src="../img/logo-htmlacademy.svg" width="27" height="34"></a>
       </div>
     </footer>
   </body>

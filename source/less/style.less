@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "OpenSans";
+  src: "../fonts/opensans.woff";
+}
+
+@greyish-brown: #444444;
+
+body {
+  //background-color: red;
+  //color: white;
+  padding: 0;
+  margin: 0;
+  font-family: "Arial";
+  width: 320px;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+
+.wrapper {
+  padding: 0px 30px;
+  box-sizing: border-box;
+}
+
+.buttom-zigzag-line(){
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-repeat: repeat-x;
+  background-position: center bottom;
+  background-size: contain;
+  padding-bottom: 36px;
+}
+
+.list-style-reset(){
+  list-style: none;
+  padding-left: 0px;
+}
+
+@import "toggle-button.less";
+@import "page-header.less";
+@import "main-nav.less";
+@import "site-menu.less";
+@import "logo.less";
+
+@import "page.less";
+@import "categories.less";
+@import "featured.less";
+@import "button.less";
+@import "about.less";
+@import "reviews.less";
+@import "arrow.less";
+@import "contacts.less";
+@import "map.less";
+@import "page-footer.less";
+@import "social.less";
+@import "copyright.less";
