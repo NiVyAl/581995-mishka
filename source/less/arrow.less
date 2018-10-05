@@ -4,15 +4,30 @@
   background-color: inherit;
   border: 1px solid #ececec;
   font-size: 0;
-  background-repeat: no-repeat;
-  background-position: center center;
   cursor: pointer;
 }
 
-.arrow--left {
+.arrow::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.arrow:hover::before {
+  opacity: 0.6;
+}
+
+.arrow:active::before {
+  opacity: 0.3;
+}
+
+.arrow--left::before {
   background-image: url("../img/icon-left-arrow.svg");
 }
 
-.arrow--right {
+.arrow--right::before {
   background-image: url("../img/icon-right-arrow.svg");
 }

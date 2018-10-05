@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
       <a class="page-header__logo logo" href="index.html">
-        <img class="page-header__logo-image logo__image" src="http://placehold.it/86x35">
+        <img class="page-header__logo-image logo__image" src="img/logo-mobile.svg" width="86" height="35">
       </a>
 
       <button class="toggle-button page-header__toggle">
@@ -20,13 +21,13 @@
           <a class="site-menu__link" href="catalog.html">Каталог товаров</a>
         </li>
         <li class="site-menu__item">
-          <a class="site-menu__link" href="form.html">Вязание на заказ</a>
+          <a class="site-menu__link" href="#">Вязание на заказ</a>
         </li>
         <li class="site-menu__item">
-          <a class="site-menu__link search-button" href="#">Поиск по сайту</a>
+          <a class="site-menu__link site-menu__link--search" href="#">Поиск по сайту</a>
         </li>
         <li class="site-menu__item">
-          <a class="site-menu__link cart-button cart-button--header" href="#">Корзина: пока пуста</a>
+          <a class="site-menu__link site-menu__link--cart" href="#">Корзина: пока пуста</a>
         </li>
       </ul>
       </nav>
@@ -34,7 +35,7 @@
 
     <main class="page">
       <h1 class="page__title">
-        Милые штуки ручной работы для дома
+        Вязание на заказ
       </h1>
 
       <form class="page-form__form order-form">
@@ -132,27 +133,27 @@
     <footer class="page-footer">
       <ul class="page-footer__social social">
         <li class="social__item">
-          <a class="social__link social__link--instagram" href="#">
-            <img class="social__image" src="http://placehold.it/22x21">
-          </a>
-        </li>
-
-        <li class="social__item ">
-          <a class="social__link social__link--facebook" href="#">
-            <img class="social__image" src="http://placehold.it/15x28">
+          <a class="social__link social-link social-link--instagram" href="#">
+            <img class="social__image" src="../img/icon-insta.svg" width="22" height="21">
           </a>
         </li>
 
         <li class="social__item">
-          <a class="social__link social__link--twitter" href="#">
-            <img class="social__image" src="http://placehold.it/23x20">
+          <a class="social__link social-link social-link--facebook" href="#">
+            <img class="social__image" src="../img/icon-fb.svg" width="15" height="28">
+          </a>
+        </li>
+
+        <li class="social__item">
+          <a class="social__link social-link social-link--twitter" href="#">
+            <img class="social__image" src="../img/icon-twitter.svg" width="23" height="20">
           </a>
         </li>
       </ul>
 
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано</b>
-        <a class="copyright__link"><img src="http://placehold.it/27x34"></a>
+        <a class="copyright__link"><img src="../img/logo-htmlacademy.svg" width="27" height="34"></a>
       </div>
     </footer>
   </body>

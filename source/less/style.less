@@ -1,38 +1,19 @@
+/* ток подключение файлов */
 @font-face {
-  font-family: "OpenSans";
-  src: "../fonts/opensans.woff";
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/opensans.woff"), url("../fonts/opensans.woff2");
 }
 
-@greyish-brown: #444444;
-
-body {
-  //background-color: red;
-  //color: white;
-  padding: 0;
-  margin: 0;
-  font-family: "Arial";
-  width: 320px;
-  margin: 0 auto;
-  border: 1px solid red;
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/opensansbold.woff"), url("../fonts/opensansbold.woff2");
 }
 
-.wrapper {
-  padding: 0px 30px;
-  box-sizing: border-box;
-}
-
-.buttom-zigzag-line(){
-  background-image: url("../img/bg-zigzag-line.svg");
-  background-repeat: repeat-x;
-  background-position: center bottom;
-  background-size: contain;
-  padding-bottom: 36px;
-}
-
-.list-style-reset(){
-  list-style: none;
-  padding-left: 0px;
-}
+@import "global-styles.less";
 
 @import "toggle-button.less";
 @import "page-header.less";
@@ -52,3 +33,11 @@ body {
 @import "page-footer.less";
 @import "social.less";
 @import "copyright.less";
+
+@import "products.less";
+@import "product.less";
+@import "video-container.less";
+
+@import "order-form.less";
+@import "type-list.less";
+@import "color-list.less";

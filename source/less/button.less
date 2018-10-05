@@ -7,6 +7,17 @@
   font-size: 17px;
   text-decoration: none;
   font-weight: bold;
-  line-height: 52px;
-  text-align: center;
+  //line-height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  cursor: pointer;
+  &:hover {
+    background-color: @greyish-brown;
+    color: white;
+  }
+  &:active {
+    color: rgba(255, 255, 255, 0.3)
+  }
 }
