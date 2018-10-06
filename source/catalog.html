@@ -6,113 +6,115 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="page-header">
-      <a class="page-header__logo logo" href="index.html">
-        <img class="page-header__logo-image logo__image" src="img/logo-mobile.svg" width="86" height="35">
-      </a>
+    <div class="wrap">
+      <header class="page-header">
+        <a class="page-header__logo logo" href="index.html">
+          <img class="page-header__logo-image logo__image" src="img/logo-mobile.svg" width="86" height="35">
+        </a>
 
-      <button class="toggle-button page-header__toggle">
-        Открыть меню
-      </button>
+        <button class="toggle-button page-header__toggle">
+          Открыть меню
+        </button>
 
-      <nav class="page-header__menu main-nav">
-      <ul class="main-nav__list site-menu">
-        <li class="site-menu__item">
-          <a class="site-menu__link" href="#">Каталог товаров</a>
-        </li>
-        <li class="site-menu__item">
-          <a class="site-menu__link" href="form.html">Вязание на заказ</a>
-        </li>
-        <li class="site-menu__item">
-          <a class="site-menu__link site-menu__link--search" href="#">Поиск по сайту</a>
-        </li>
-        <li class="site-menu__item">
-          <a class="site-menu__link site-menu__link--cart" href="#">Корзина: пока пуста</a>
-        </li>
-      </ul>
-      </nav>
-    </header>
-
-    <main class="page">
-      <h1 class="page__title">
-        Каталог товаров
-      </h1>
-
-      <section class="products">
-        <ul class="products__list">
-          <li class="products__item product">
-            <a class="product__image-container" href="#">
-              <img class="product__image" src="img/photo-hare-mobile@1x.jpg" width="260" height="195">
-            </a>
-
-            <div class="product__info">
-              <div class="product__info-text">
-                <a class="product__title-container" href="#">
-                  <h2 class="product__title">Зайчик-попрыгайчик</h2>
-                </a>
-                <p class="product__characteristic">Рост 30 см, вес 200 г</p>
-              </div>
-
-              <div class="product__info-buy">
-                <p class="product__price">1 200 руб.</p>
-                <a class="product__cart-button" href="#">Добавить в корзину</a>
-              </div>
-            </div>
-
+        <nav class="page-header__menu main-nav">
+        <ul class="main-nav__list site-menu">
+          <li class="site-menu__item">
+            <a class="site-menu__link" href="#">Каталог товаров</a>
           </li>
-
-          <li class="products__item product">
-            <a class="product__image-container" href="#">
-              <img class="product__image" src="img/photo-bowl-mobile@1x.jpg" width="260" height="195">
-            </a>
-
-            <div class="product__info">
-              <div class="product__info-text">
-                <a class="product__title-container" href="#">
-                  <h2 class="product__title">Корзинка для белья</h2>
-                </a>
-                <p class="product__characteristic">Диаметр 15 см, высота 10 см</p>
-              </div>
-
-              <div class="product__info-buy">
-                <p class="product__price">690 руб.</p>
-                <a class="product__cart-button" href="#">Добавить в корзину</a>
-              </div>
-            </div>
-
+          <li class="site-menu__item">
+            <a class="site-menu__link" href="form.html">Вязание на заказ</a>
           </li>
-
-          <li class="products__item product">
-            <a class="product__image-container" href="#">
-              <img class="product__image" src="img/photo-toys-mobile@1x.jpg" width="260" height="195">
-            </a>
-
-            <div class="product__info">
-              <div class="product__info-text">
-                <a class="product__title-container" href="#">
-                  <h2 class="product__title">Большая корзинка для игрушек</h2>
-                </a>
-                <p class="product__characteristic">Диаметр 30 см, высота 30 см</p>
-              </div>
-
-              <div class="product__info-buy">
-                <p class="product__price">1500 руб.</p>
-                <a class="product__cart-button" href="#">Добавить в корзину</a>
-              </div>
-            </div>
-
+          <li class="site-menu__item">
+            <a class="site-menu__link site-menu__link--search" href="#">Поиск по сайту</a>
           </li>
-
-          <li class="products__item video-container">
-            <h2 class="video-container__title">Процесс производства</h2>
-            <img class="video-container__video" src="img/video-mobile@1x.jpg" width="260" height="150">
-            <p class="video-container__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о     том, как появляются наши товары.
-            </p>
-            <a class="button video-container__button" href="#">Сделать заказ</a>
+          <li class="site-menu__item">
+            <a class="site-menu__link site-menu__link--cart" href="#">Корзина: пока пуста</a>
           </li>
         </ul>
-      </section>
-    </main>
+        </nav>
+      </header>
+
+      <main class="page">
+        <h1 class="page__title">
+          Каталог товаров
+        </h1>
+
+        <section class="products">
+          <ul class="products__list">
+            <li class="products__item product">
+              <a class="product__image-container" href="#">
+                <img class="product__image" src="img/photo-hare-mobile@1x.jpg" width="260" height="195">
+              </a>
+
+              <div class="product__info">
+                <div class="product__info-text">
+                  <a class="product__title-container" href="#">
+                    <h2 class="product__title">Зайчик-попрыгайчик</h2>
+                  </a>
+                  <p class="product__characteristic">Рост 30 см, вес 200 г</p>
+                </div>
+
+                <div class="product__info-buy">
+                  <p class="product__price">1 200 руб.</p>
+                  <a class="product__cart-button" href="#">Добавить в корзину</a>
+                </div>
+              </div>
+
+            </li>
+
+            <li class="products__item product">
+              <a class="product__image-container" href="#">
+                <img class="product__image" src="img/photo-bowl-mobile@1x.jpg" width="260" height="195">
+              </a>
+
+              <div class="product__info">
+                <div class="product__info-text">
+                  <a class="product__title-container" href="#">
+                    <h2 class="product__title">Корзинка для белья</h2>
+                  </a>
+                  <p class="product__characteristic">Диаметр 15 см, высота 10 см</p>
+                </div>
+
+                <div class="product__info-buy">
+                  <p class="product__price">690 руб.</p>
+                  <a class="product__cart-button" href="#">Добавить в корзину</a>
+                </div>
+              </div>
+
+            </li>
+
+            <li class="products__item product">
+              <a class="product__image-container" href="#">
+                <img class="product__image" src="img/photo-toys-mobile@1x.jpg" width="260" height="195">
+              </a>
+
+              <div class="product__info">
+                <div class="product__info-text">
+                  <a class="product__title-container" href="#">
+                    <h2 class="product__title">Большая корзинка для игрушек</h2>
+                  </a>
+                  <p class="product__characteristic">Диаметр 30 см, высота 30 см</p>
+                </div>
+
+                <div class="product__info-buy">
+                  <p class="product__price">1500 руб.</p>
+                  <a class="product__cart-button" href="#">Добавить в корзину</a>
+                </div>
+              </div>
+
+            </li>
+
+            <li class="products__item video-container">
+              <h2 class="video-container__title">Процесс производства</h2>
+              <img class="video-container__video" src="img/video-mobile@1x.jpg" width="260" height="150">
+              <p class="video-container__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о     том, как появляются наши товары.
+              </p>
+              <a class="button video-container__button" href="#">Сделать заказ</a>
+            </li>
+          </ul>
+        </section>
+      </main>
+    </div>
 
     <footer class="page-footer">
       <ul class="page-footer__social social">
