@@ -1,0 +1,30 @@
+.toggle-button {
+  font-size: 0;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.toggle-button::before,
+.toggle-button::after {
+  content: "";
+  width: 28px;
+  height: 2px;
+  display: block;
+  background-color: black;
+  position: absolute;
+  left: -4px;
+  top: 50%;
+  margin-top: -1px;
+}
+
+.toggle-button::before {
+  transform: rotate(45deg);
+}
+
+.toggle-button::after {
+  transform: rotate(-45deg);
+}
