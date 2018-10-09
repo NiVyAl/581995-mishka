@@ -3,6 +3,11 @@
   .buttom-zigzag-line();
 }
 
+.reviews__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .reviews__title {
   font-size: 25px;
 }
@@ -43,4 +48,23 @@
 .reviews__button {
   margin: 0 auto;
   margin-top: 38px;
+}
+
+@media (min-width: @tablet-width) {
+  .reviews__wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .reviews__title {
+    font-size: 43px;
+    line-height: 50px;
+    order: -2;
+  }
+
+  .reviews__button {
+    order: -1;
+    width: 171px;
+    height: 48px;
+  }
 }

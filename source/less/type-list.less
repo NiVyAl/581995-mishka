@@ -1,3 +1,11 @@
 .type-list {
   .list-style-reset();
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: @tablet-width) {
+  .type-list {
+    flex-wrap: wrap;
+  }
 }

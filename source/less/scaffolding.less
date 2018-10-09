@@ -1,3 +1,4 @@
+/* суда шрифты! */
 body {
   padding: 0;
   margin: 0;
@@ -5,6 +6,8 @@ body {
   min-width: 320px;
   //margin: 0 auto;
   font-style: normal;
+
+  border: 1px solid red;
 }
 
 img {
@@ -15,4 +18,27 @@ img {
 .wrap {
   width: 320px;
   margin: 0 auto;
+}
+
+.image-tablet {
+  display: none;
+}
+
+.image-desktop {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .wrap {
+    //width: 665px;
+    width: 768px
+  }
+
+  .image-tablet {
+    display: block;
+  }
+
+  .image-mobile {
+    display: none;
+  }
 }

@@ -4,6 +4,8 @@
   font-weight: bold;
   line-height: 24px;
   margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .site-menu__item {
@@ -14,9 +16,9 @@
   color: black;
   text-decoration: none;
   height: 80px;
-  display: block;
+  display: flex;
   text-align: left;
-  line-height: 80px;
+  align-items: center;
   padding-left: 80px;
 
   background-repeat: no-repeat;
@@ -37,4 +39,27 @@
 
 .site-menu__link--cart {
   background-image: url("../img/icon-cart.svg");
+}
+
+@media (min-width: @tablet-width) {
+  .site-menu {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .site-menu__item--search {
+    order: -2;
+    font-size: 0;
+    width: 85px;
+    background-position: center center;
+  }
+
+  .site-menu__item--cart {
+    order: -1;
+    width: 265px;
+  }
+
+  .site-menu__item {
+    border-left: 1px solid #ececec;
+  }
 }

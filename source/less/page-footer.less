@@ -1,4 +1,32 @@
 .page-footer {
-  .wrapper();
   background-color: #f1f1f1;
+}
+
+.page-footer__wrap {
+  //.wrapper();
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+.page-footer__logo {
+    display: none;
+  }
+
+@media (min-width: @tablet-width) {
+  .page-footer__wrap {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 0;
+  }
+  .page-footer__logo {
+    display: flex;
+    justify-content: flex-start;
+    flex-basis: 200px;
+  }
+
+  .page-footer__copyright {
+    flex-basis: 200px;
+  }
 }

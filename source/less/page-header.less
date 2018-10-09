@@ -1,9 +1,25 @@
 .page-header {
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .page-header__toggle {
   position: absolute;
   top: 30px;
   right: 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__toggle {
+    display: none;
+  }
+
+  .page-header {
+    flex-direction: row;
+  }
+
+  .page-header__logo {
+    border: 1px solid green;
+  }
 }

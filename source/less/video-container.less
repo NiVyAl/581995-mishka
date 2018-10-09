@@ -3,6 +3,8 @@
   height: 500px;
   box-sizing: border-box;
   border: 1px solid #ededed;
+  display: flex;
+  flex-direction: column;
 }
 
 .video-container__title {
@@ -24,4 +26,19 @@
 .video-container__button {
   width: 192px;
   margin: 30px auto;
+}
+
+@media (min-width: @tablet-width) {
+  .video-container {
+    width: 670px;
+    height: 745px;
+  }
+
+  .video-container__video {
+    order: -1;
+  }
+
+  .video-container__button {
+    width: 580px;
+  }
 }
