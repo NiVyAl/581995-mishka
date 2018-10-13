@@ -40,7 +40,33 @@
 
 @media (min-width: @tablet-width) {
   .categories {
+    .wrapper();
     flex-direction: row;
+    justify-content: center;
     margin-top: -105px;
+  }
+
+  .categories__link {
+    padding: 0;
+    padding-right: 185px;
+    padding-left: 35px;
+  }
+
+  .categories__item {
+    width: 50%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .categories__link {
+    padding-right: 370px;
+  }
+
+  .categories__link--interior {
+    background-position: 450px center;
+  }
+
+  .categories__link--toys {
+    background-position: 425px center;
   }
 }

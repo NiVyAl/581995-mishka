@@ -6,11 +6,9 @@ body {
   min-width: 320px;
   //margin: 0 auto;
   font-style: normal;
-
-  border: 1px solid red;
 }
 
-img {
+img { // чтоб картинки не выползали за родителей
   max-width: 100%;
   height: auto;
 }
@@ -30,8 +28,7 @@ img {
 
 @media (min-width: @tablet-width) {
   .wrap {
-    //width: 665px;
-    width: 768px
+    width: 768px;
   }
 
   .image-tablet {
@@ -40,5 +37,19 @@ img {
 
   .image-mobile {
     display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .wrap {
+    width: 1150px;
+  }
+
+  .image-tablet {
+    display: none;
+  }
+
+  .image-desktop {
+    display: block;
   }
 }

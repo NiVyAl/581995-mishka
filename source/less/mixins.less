@@ -1,6 +1,10 @@
 .wrapper() {
   padding: 0 30px;
   box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 50px;
+  }
 }
 
 .buttom-zigzag-line() {
@@ -14,11 +18,4 @@
 .list-style-reset() {
   list-style: none;
   padding-left: 0;
-}
-
-@media (min-width: @tablet-width) {
-  .wrapper() {
-    padding: 0 50px;
-    // чет не работает
-  }
 }

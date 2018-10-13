@@ -36,13 +36,11 @@
   font-weight: bold;
 }
 
-.order-form__label--text {
-  display: block;
-}
-
 .order-form__footer {
   font-size: 14px;
   color: @greyish-brown;
+  display: flex;
+  flex-direction: column;
 }
 
 .order-form__button {
@@ -50,6 +48,11 @@
 }
 
 .order-form__fieldset--text {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-list__item--text {
   display: flex;
   flex-direction: column;
 }
@@ -68,6 +71,35 @@
   }
 
   .order-form__fieldset--text {
+    //flex-direction: column;
+  }
 
+  .order-form__fieldset:nth-child(3),
+  .order-form__fieldset:nth-child(5),
+  .order-form__fieldset:nth-child(6) {
+    background-color: #f1f1f1;
+  }
+
+  .order-form__footer {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .order-form__button {
+    order: -1;
+  }
+
+  .order-form__title {
+    width: 167px;
+  }
+
+  .form-list__item--text {
+    flex-direction: row;
+  }
+
+  .order-form__label--checkbox {
+    width: 220px;
+    display: inline-block;
   }
 }

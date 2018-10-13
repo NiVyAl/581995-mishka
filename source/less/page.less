@@ -27,17 +27,28 @@
 }
 
 @media (min-width: @tablet-width) {
-  .page__title--main-page {
-    height: 746px;
-    background-image: url("../img/hero-tablet@1x.jpg");
-  }
-
   .page__title {
     font-size: 43px;
     line-height: 50px;
+    height: 225px;
   }
 
   .page__title--main-page {
+    height: 746px;
+    background-image: url("../img/hero-tablet@1x.jpg");
     padding-top: 161px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page__title {
+    font-size: 53px;
+    line-height: 57px;
+    height: 254px;
+  }
+
+  .page__title--main-page {
+    height: 746px;
+    background-image: url("../img/hero-desktop@1x.jpg");
   }
 }

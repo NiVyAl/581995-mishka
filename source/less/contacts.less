@@ -1,7 +1,15 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0;
+}
+
 .contacts__title {
   .wrapper();
   font-size: 18px;
   line-height: 30px;
+  align-self: flex-start;
 }
 
 .contacts__table {
@@ -13,7 +21,7 @@
 }
 
 .contacts__button {
-  margin: 40px auto;
+  margin-top: 40px;
 }
 
 .contacts__field {
@@ -38,10 +46,47 @@
     height: 82px;
     background-image: url("../img/icon-flag.svg");
     background-repeat: no-repeat;
-    background-position: 700px 0;
+    background-position: 650px 0;
+    width: 100%;
   }
 
   .contacts__field {
     padding-right: 40px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts {
+    .wrapper();
+    margin-top: 70px; // временно
+    margin-bottom: 130px; // временно
+    align-items: flex-start;
+  }
+
+  .contacts__table tbody {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .contacts__map {
+    order: -1;
+    align-self: flex-end;
+  }
+
+  .contacts__table,
+  .contacts__title {
+    padding: 0;
+    width: 300px;
+  }
+
+  .contacts__title {
+    margin-top: -400px;
+    padding-left: 175px;
+    background-position: 60px 0;
+  }
+
+  .contacts__table,
+  .contacts__button {
+    margin-left: 175px;
   }
 }

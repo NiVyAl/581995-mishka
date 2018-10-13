@@ -11,15 +11,25 @@
 }
 
 @media (min-width: @tablet-width) {
-  .page-header__toggle {
-    display: none;
-  }
-
   .page-header {
-    flex-direction: row;
+    height: 80px;
+    .wrapper();
+    position: relative;
+    //flex-direction: row;
+    border-bottom: 1px solid #ececec;
   }
 
   .page-header__logo {
-    border: 1px solid green;
+    position: absolute;
+  }
+
+  .page-header__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    height: 90px;
   }
 }
