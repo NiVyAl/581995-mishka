@@ -14,7 +14,7 @@
           <img class="page-header__logo-image logo__image image-desktop" src="img/logo-desktop.svg" width="148" height="73">
         </a>
 
-        <button class="toggle-button page-header__toggle">
+        <button class="toggle-button page-header__toggle" onclick="menuOpen()">
           Открыть меню
         </button>
 
@@ -64,7 +64,7 @@
               </li>
 
               <li class="form-list__item">
-                <input type="radio" id="child-toy" name="type">
+                <input class="visual-hidden" type="radio" id="child-toy" name="type">
                 <label class="order-form__label order-form__label--radio" for="child-toy">Детская игрушка</label>
               </li>
             </ul>
@@ -75,32 +75,32 @@
 
             <ul class="form-list form-list--checkbox">
               <li class="form-list__item">
-                <input  type="checkbox" id="white" name="color">
+                <input class="visual-hidden" type="checkbox" id="white" name="color">
                 <label class="order-form__label order-form__label--checkbox" for="white">Белый</label>
               </li>
 
               <li class="form-list__item">
-                <input type="checkbox" id="gray" name="color">
+                <input class="visual-hidden" type="checkbox" id="gray" name="color">
                 <label class="order-form__label order-form__label--checkbox" for="gray">Серый</label>
               </li>
 
               <li class="form-list__item">
-                <input type="checkbox" id="tiff" name="color">
+                <input class="visual-hidden" type="checkbox" id="tiff" name="color">
                 <label class="order-form__label order-form__label--checkbox" for="tiff">«Тиффани»</label>
               </li>
 
               <li class="form-list__item">
-                <input type="checkbox" id="black" name="color">
+                <input class="visual-hidden" type="checkbox" id="black" name="color">
                 <label class="order-form__label order-form__label--checkbox" for="black">Черный</label>
               </li>
 
               <li class="form-list__item">
-                <input type="checkbox" id="pink" name="color">
+                <input class="visual-hidden" type="checkbox" id="pink" name="color">
                 <label class="order-form__label order-form__label--checkbox" for="pink">Розовый</label>
               </li>
 
               <li class="form-list__item">
-                <input type="checkbox" id="orange" name="color">
+                <input class="visual-hidden" type="checkbox" id="orange" name="color">
                 <label class="order-form__label order-form__label--checkbox" for="orange">Оранжевый</label>
               </li>
             </ul>
@@ -113,17 +113,17 @@
             <ul class="form-list">
               <li class="form-list__item form-list__item--text">
                 <label class="order-form__label order-form__label" for="name">Имя:</label>
-                <input type="text" id="name" placeholder="Введите ваше имя*">
+                <input class="form-list__text-input" type="text" id="name" placeholder="Введите ваше имя*">
               </li>
 
               <li class="form-list__item form-list__item--text">
                 <label class="order-form__label order-form__label" for="surname">Фамилия:</label>
-                <input type="text" id="surname" placeholder="Укажите фамилию*">
+                <input class="form-list__text-input" type="text" id="surname" placeholder="Укажите фамилию*">
               </li>
 
               <li class="form-list__item form-list__item--text">
                 <label class="order-form__label order-form__label" for="patronymic">Отчество:</label>
-                <input type="text" id="patronymic" placeholder="Отчество, если желаете">
+                <input class="form-list__text-input" type="text" id="patronymic" placeholder="Отчество, если желаете">
               </li>
             </ul>
           </section>
@@ -132,7 +132,7 @@
             <h2 class="order-form__title">Тел</h2>
             <ul class="form-list">
               <li class="fotm-list__item">
-                <input type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+                <input class="form-list__text-input form-list__text-input--phone" type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
               </li>
             </ul>
           </section>
@@ -141,7 +141,7 @@
             <h2 class="order-form__title">e-mail</h2>
             <ul class="form-list">
               <li class="fotm-list__item">
-                <input type="email" placeholder="Ваш Email*">
+                <input class="form-list__text-input form-list__text-input--mail" type="email" placeholder="Ваш Email*">
               </li>
             </ul>
           </section>
@@ -150,7 +150,7 @@
             <h2 class="order-form__title">доп</h2>
             <ul class="form-list">
               <li class="fotm-list__item">
-                <textarea rows="10" cols="20" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+                <textarea class="form-list__text-input form-list__text-input--textarea" rows="10" cols="20" placeholder="Опишите все ваши пожелания к заказу"></textarea>
               </li>
             </ul>
           </section>
@@ -195,5 +195,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="js/script.js"></script>
   </body>
 </html>

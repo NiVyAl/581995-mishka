@@ -8,8 +8,8 @@
   cursor: pointer;
 }
 
-.toggle-button::before,
-.toggle-button::after {
+.toggle-button--close::before,
+.toggle-button--close::after {
   content: "";
   width: 28px;
   height: 2px;
@@ -21,10 +21,16 @@
   margin-top: -1px;
 }
 
-.toggle-button::before {
+.toggle-button--close::before {
   transform: rotate(45deg);
 }
 
-.toggle-button::after {
+.toggle-button--close::after {
   transform: rotate(-45deg);
+}
+
+.toggle-button--open {
+  background-image: url("../img/icon-menu-open.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
 }
