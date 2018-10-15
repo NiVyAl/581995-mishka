@@ -2,7 +2,42 @@
   width: 100%;
   height: 457px;
   display: block;
-  background-image: url("../img/icon-map-pin.svg"), url("../img/map-mobile@1x.jpg");
+  background-image: url("../img/map-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center 145px, center center;
+  background-position: center center;
+  position: relative;
+}
+
+.map::before {
+  width: 70px;
+  height: 100px;
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url("../img/icon-map-pin.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  top: 145px;
+  right: 115px;
+}
+
+@media (min-width: @tablet-width) {
+  .map {
+    background-image: url("../img/map-tablet@1x.jpg");
+  }
+
+  .map::before {
+    right: 335px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .map {
+    background-image: url("../img/map-desktop@1x.jpg");
+    width: 525px;
+  }
+
+  .map::before {
+    right: 216px;
+  }
 }

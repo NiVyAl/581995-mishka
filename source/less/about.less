@@ -1,5 +1,6 @@
 .about {
   .wrapper();
+  padding-bottom: 30px;
 }
 
 .about__title {
@@ -9,13 +10,18 @@
 
 .about__list {
   .list-style-reset();
+  display: flex;
+  flex-direction: column;
 }
 
 .about__item {
+  width: 100%;
   padding-top: 85px;
+  padding-right: 50px;
+  box-sizing: border-box;
   font-size: 17px;
   font-weight: bold;
-  width: 215px;
+  //width: 215px;
   background-repeat: no-repeat;
   background-position: 8px 30px;
 }
@@ -46,4 +52,47 @@
 
 .about__item--gift {
   background-image: url("../img/icon-feature-gift.svg");
+}
+
+@media (min-width: @tablet-width) {
+  .about {
+    padding-bottom: 80px;
+  }
+
+  .about__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .about__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .about__item {
+    width: 50%;
+  }
+
+  /* чтоб были в нужной последовательности */
+  .about__item--flower {
+    order: -5;
+  }
+
+  .about__item--ball {
+    order: -4;
+  }
+
+  .about__item--money {
+    order: -3;
+  }
+
+  .about__item--rocket {
+    order: -2;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .about {
+    padding-left: 225px; // временно
+  }
 }

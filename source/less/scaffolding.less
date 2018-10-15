@@ -1,3 +1,4 @@
+/* суда шрифты! */
 body {
   padding: 0;
   margin: 0;
@@ -7,7 +8,7 @@ body {
   font-style: normal;
 }
 
-img {
+img { // чтоб картинки не выползали за родителей
   max-width: 100%;
   height: auto;
 }
@@ -15,4 +16,40 @@ img {
 .wrap {
   width: 320px;
   margin: 0 auto;
+}
+
+.image-tablet {
+  display: none;
+}
+
+.image-desktop {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .wrap {
+    width: 768px;
+  }
+
+  .image-tablet {
+    display: block;
+  }
+
+  .image-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .wrap {
+    width: 1150px;
+  }
+
+  .image-tablet {
+    display: none;
+  }
+
+  .image-desktop {
+    display: block;
+  }
 }

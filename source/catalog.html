@@ -9,7 +9,9 @@
     <div class="wrap">
       <header class="page-header">
         <a class="page-header__logo logo" href="index.html">
-          <img class="page-header__logo-image logo__image" src="img/logo-mobile.svg" width="86" height="35">
+          <img class="page-header__logo-image logo__image image-mobile" src="img/logo-mobile.svg" width="86" height="35">
+          <img class="page-header__logo-image logo__image image-tablet" src="img/logo-tablet.svg" width="112" height="46">
+          <img class="page-header__logo-image logo__image image-desktop" src="img/logo-desktop.svg" width="148" height="73">
         </a>
 
         <button class="toggle-button page-header__toggle">
@@ -24,11 +26,20 @@
           <li class="site-menu__item">
             <a class="site-menu__link" href="form.html">Вязание на заказ</a>
           </li>
-          <li class="site-menu__item">
+          <li class="site-menu__item site-menu__item--search">
             <a class="site-menu__link site-menu__link--search" href="#">Поиск по сайту</a>
           </li>
-          <li class="site-menu__item">
+          <li class="site-menu__item site-menu__item--cart">
             <a class="site-menu__link site-menu__link--cart" href="#">Корзина: пока пуста</a>
+          </li>
+          <li class="site-menu__item site-menu__item--desktop">
+            <a class="site-menu__link" href="form.html">Новые поступления</a>
+          </li>
+          <li class="site-menu__item site-menu__item--desktop">
+            <a class="site-menu__link" href="form.html">Распродажа</a>
+          </li>
+          <li class="site-menu__item site-menu__item--feature">
+            Бесплатная доставка по России
           </li>
         </ul>
         </nav>
@@ -43,7 +54,9 @@
           <ul class="products__list">
             <li class="products__item product">
               <a class="product__image-container" href="#">
-                <img class="product__image" src="img/photo-hare-mobile@1x.jpg" width="260" height="195">
+                <img class="product__image image-mobile" src="img/photo-hare-mobile@1x.jpg" width="260" height="195">
+                <img class="product__image image-tablet" src="img/photo-hare-tablet@1x.jpg" width="334" height="334">
+                <img class="product__image image-desktop" src="img/photo-hare-desktop@1x.jpg" width="316" height="462">
               </a>
 
               <div class="product__info">
@@ -64,7 +77,9 @@
 
             <li class="products__item product">
               <a class="product__image-container" href="#">
-                <img class="product__image" src="img/photo-bowl-mobile@1x.jpg" width="260" height="195">
+                <img class="product__image image-mobile" src="img/photo-bowl-mobile@1x.jpg" width="260" height="195">
+                <img class="product__image image-tablet" src="img/photo-bowl-tablet@1x.jpg" width="334" height="334">
+                <img class="product__image image-desktop" src="img/photo-bowl-desktop@1x.jpg" width="316" height="462">
               </a>
 
               <div class="product__info">
@@ -85,7 +100,9 @@
 
             <li class="products__item product">
               <a class="product__image-container" href="#">
-                <img class="product__image" src="img/photo-toys-mobile@1x.jpg" width="260" height="195">
+                <img class="product__image image-mobile" src="img/photo-toys-mobile@1x.jpg" width="260" height="195">
+                <img class="product__image image-tablet" src="img/photo-toys-tablet@1x.jpg" width="334" height="334">
+                <img class="product__image image-desktop" src="img/photo-toys-desktop@1x.jpg" width="316" height="462">
               </a>
 
               <div class="product__info">
@@ -106,7 +123,9 @@
 
             <li class="products__item video-container">
               <h2 class="video-container__title">Процесс производства</h2>
-              <img class="video-container__video" src="img/video-mobile@1x.jpg" width="260" height="150">
+              <img class="video-container__video image-mobile" src="img/video-mobile@1x.jpg" width="260" height="150">
+              <img class="video-container__video image-tablet" src="img/video-tablet@1x.jpg" width="668" height="455">
+              <img class="video-container__video image-desktop" src="img/video-desktop@1x.jpg" width="682" height="455">
               <p class="video-container__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о     том, как появляются наши товары.
               </p>
               <a class="button video-container__button" href="#">Сделать заказ</a>
@@ -117,29 +136,35 @@
     </div>
 
     <footer class="page-footer">
-      <ul class="page-footer__social social">
-        <li class="social__item">
-          <a class="social__link social-link social-link--instagram" href="#">
-            <img class="social__image" src="img/icon-insta.svg" width="22" height="21">
-          </a>
-        </li>
+      <div class="wrap page-footer__wrap">
+        <a class="page-footer__logo logo" href="index.html">
+            <img class="page-footer__logo-image logo__image" src="img/logo-mobile.svg" width="86" height="35">
+        </a>
 
-        <li class="social__item">
-          <a class="social__link social-link social-link--facebook" href="#">
-            <img class="social__image" src="img/icon-fb.svg" width="15" height="28">
-          </a>
-        </li>
+        <ul class="page-footer__social social">
+          <li class="social__item">
+            <a class="social__link social-link social-link--instagram" href="#">
+              <img class="social__image" src="img/icon-insta.svg" width="22" height="21">
+            </a>
+          </li>
 
-        <li class="social__item">
-          <a class="social__link social-link social-link--twitter" href="#">
-            <img class="social__image" src="img/icon-twitter.svg" width="23" height="20">
-          </a>
-        </li>
-      </ul>
+          <li class="social__item">
+            <a class="social__link social-link social-link--facebook" href="#">
+              <img class="social__image" src="img/icon-fb.svg" width="15" height="28">
+            </a>
+          </li>
 
-      <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано</b>
-        <a class="copyright__link"><img src="img/logo-htmlacademy.svg" width="27" height="34"></a>
+          <li class="social__item">
+            <a class="social__link social-link social-link--twitter" href="#">
+              <img class="social__image" src="img/icon-twitter.svg" width="23" height="20">
+            </a>
+          </li>
+        </ul>
+
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано</b>
+          <a class="copyright__link"><img src="img/logo-htmlacademy.svg" width="27" height="34"></a>
+        </div>
       </div>
     </footer>
   </body>
