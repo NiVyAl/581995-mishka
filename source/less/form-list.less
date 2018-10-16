@@ -3,9 +3,49 @@
   flex-direction: column;
 }
 
+.form-list__item--text {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-list__text-input {
+  width: 100%;
+  font-size: 17px;
+  height: 50px;
+  border: 0;
+  border-bottom: 2px solid black;
+  margin-bottom: 30px;
+}
+
+.form-list__text-input--phone,
+.form-list__text-input--mail {
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.form-list__text-input--phone {
+  background-image: url("../img/icon-phone.svg");
+}
+
+.form-list__text-input--mail {
+  background-image: url("../img/icon-mail.svg");
+}
+
+.form-list__text-input--textarea {
+  border: 2px solid black;
+  resize: none;
+  height: 140px;
+  box-sizing: border-box;
+  padding: 15px;
+}
+
 @media (min-width: @tablet-width) {
   .form-list--checkbox {
     flex-direction: row;
     flex-wrap: wrap;
+  }
+
+  .form-list__item--text {
+    flex-direction: row;
   }
 }

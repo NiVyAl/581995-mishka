@@ -6,13 +6,23 @@
 
 .page-header__toggle {
   position: absolute;
-  top: 30px;
-  right: 30px;
+  top: 32px;
+  right: 31px;
+}
+
+.page-header__logo {
+  border-top: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+  height: 80px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (min-width: @tablet-width) {
   .page-header {
-    height: 80px;
+    height: 88px;
     .wrapper();
     position: relative;
     //flex-direction: row;
@@ -21,6 +31,9 @@
 
   .page-header__logo {
     position: absolute;
+    border: none;
+    //height: 88px;
+    height: 100%;
   }
 
   .page-header__toggle {
@@ -30,6 +43,6 @@
 
 @media (min-width: @desktop-width) {
   .page-header {
-    height: 90px;
+    //height: 90px;
   }
 }

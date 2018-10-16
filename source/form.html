@@ -8,11 +8,13 @@
   <body>
     <div class="wrap">
       <header class="page-header">
-        <a class="page-header__logo logo" href="index.html">
-          <img class="page-header__logo-image logo__image image-mobile" src="img/logo-mobile.svg" width="86" height="35">
-          <img class="page-header__logo-image logo__image image-tablet" src="img/logo-tablet.svg" width="112" height="46">
-          <img class="page-header__logo-image logo__image image-desktop" src="img/logo-desktop.svg" width="148" height="73">
-        </a>
+        <div class="page-header__logo">
+          <a class="logo" href="index.html">
+            <img class="logo__image image-mobile" src="img/logo-mobile.svg" width="86" height="35">
+            <img class="logo__image image-tablet" src="img/logo-tablet.svg" width="112" height="46">
+            <img class="logo__image image-desktop" src="img/logo-desktop.svg" width="148" height="73">
+          </a>
+        </div>
 
         <button class="toggle-button page-header__toggle" onclick="menuOpen()">
           Открыть меню
@@ -57,10 +59,10 @@
 
           <section class="order-form__fieldset">
             <h2 class="order-form__title">Тип</h2>
-            <ul class="form-list">
+            <ul class="form-list order-form__list">
               <li class="form-list__item">
-                <input class="visual-hidden" type="radio" id="interior" name="type">
-                <label class="order-form__label order-form__label--radio" for="interior">Аксессуар для интерьера</label>
+                <input class="visual-hidden" type="radio" id="interior" name="type" checked>
+                <label class="order-form__label order-form__label--radio" for="interior"><span>Аксессуар для интерьера</span></label>
               </li>
 
               <li class="form-list__item">

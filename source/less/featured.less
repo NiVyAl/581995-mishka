@@ -4,11 +4,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 42px;
 }
 
-.featured__tittle {
+.featured__title {
   font-size: 25px;
   line-height: 30px;
+  margin-top: 27px;
+  margin-bottom: 0;
 }
 
 .featured__title--best::after {
@@ -25,6 +28,8 @@
   font-size: 15px;
   line-height: 24px;
   color: @greyish-brown;
+  margin-top: 18px;
+  margin-bottom: 18px;
 }
 
 .featured__characteristics {
@@ -32,13 +37,22 @@
   line-height: 20px;
   border-collapse: collapse;
   width: 100%;
-  margin-bottom: 28px;
+  //margin-bottom: 28px;
   color: @greyish-brown;
 }
 
 .featured__table-row {
   border-bottom: 1px solid #ececec;
-  height: 40px;
+  height: 39px;
+}
+
+.featured__value {
+  width: 98px;
+}
+
+.feature__field,
+.featured__value {
+  padding: 0;
 }
 
 .featured__price {
@@ -47,10 +61,17 @@
   color: @greyish-brown;
   font-weight: bold;
   text-align: center;
+  margin-top: 25px;
+  margin-bottom: 0;
 }
 
 .featured__image {
   display: block;
+  margin-top: 30px;
+}
+
+.featured__button {
+  margin-top: 24px;
 }
 
 @media (min-width: @tablet-width) {
