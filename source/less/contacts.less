@@ -49,6 +49,10 @@
 }
 
 @media (min-width: @tablet-width) {
+  .contacts {
+    padding-bottom: 58px;
+  }
+
   .contacts__table tbody {
     display: flex;
     justify-content: space-between;
@@ -57,15 +61,34 @@
   .contacts__title {
     font-size: 43px;
     line-height: 50px;
-    height: 82px;
+    //height: 82px;
     background-image: url("../img/icon-flag.svg");
     background-repeat: no-repeat;
-    background-position: 650px 0;
+    background-position: 668px 0;
     width: 100%;
+    margin-top: 46px;
+    padding-top: 15px;
+    padding-bottom: 17px;
   }
 
   .contacts__field {
     padding-right: 40px;
+  }
+
+  .contacts__table {
+    font-size: 17px;
+    line-height: 30px;
+    padding: 0;
+    margin-top: 28px;
+  }
+
+  .contacts__map {
+    margin-top: 22px;
+  }
+
+  .contacts__button {
+    width: 230px;
+    margin-top: 55px;
   }
 }
 

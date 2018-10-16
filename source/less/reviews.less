@@ -61,9 +61,11 @@
 
 @media (min-width: @tablet-width) {
   .reviews {
-    background-image: url("../img/review@1x.jpg");
+    background-image: url("../img/review@1x.jpg"), url("../img/bg-zigzag-line.svg");
     background-repeat: no-repeat;
-    background-position: left;
+    background-size: auto, contain;
+    background-position: top left, bottom;
+    height: 542px;
   }
 
   .reviews__wrapper {
@@ -81,15 +83,26 @@
 
   .reviews__button {
     order: -1;
-    width: 171px;
-    height: 48px;
-    margin-top: 0;
+    width: 175px;
+    height: 50px;
+    margin-top: 10px;
   }
 
   .reviews__toggle {
     position: absolute;
     right: 0;
-    bottom: 30px;
+    bottom: 8px;
+  }
+
+  .reviews__text {
+    font-size: 17px;
+    line-height: 30px;
+    margin-top: 45px;
+  }
+
+  .reviews__author {
+    margin-top: 60px;
+    font-size: 18px;
   }
 }
 

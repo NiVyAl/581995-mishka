@@ -1,12 +1,13 @@
 .about {
   .wrapper();
   padding-bottom: 30px;
-  margin-top: 28px;
+  //padding-top: 8px;
 }
 
 .about__title {
   font-size: 25px;
   line-height: 30px;
+  margin-top: 28px;
   margin-bottom: 0;
 }
 
@@ -64,21 +65,26 @@
 
 @media (min-width: @tablet-width) {
   .about {
-    padding-bottom: 80px;
+    padding-bottom: 38px;
   }
 
   .about__title {
     font-size: 43px;
     line-height: 50px;
+    margin-top: 49px;
   }
 
   .about__list {
     flex-direction: row;
     flex-wrap: wrap;
+    margin-top: 20px;
   }
 
   .about__item {
     width: 50%;
+    margin-bottom: 28px;
+    font-size: 20px;
+    line-height: 22px;
   }
 
   /* чтоб были в нужной последовательности */
