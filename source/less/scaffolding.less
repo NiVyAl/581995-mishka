@@ -26,6 +26,14 @@ img { // чтоб картинки не выползали за родителе
   display: none;
 }
 
+.visual-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
 @media (min-width: @tablet-width) {
   .wrap {
     width: 768px;
