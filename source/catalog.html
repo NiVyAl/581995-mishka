@@ -10,9 +10,11 @@
       <header class="page-header">
         <div class="page-header__logo">
           <a class="logo" href="index.html">
-            <img class="logo__image image-mobile" src="img/logo-mobile.svg" width="86" height="35">
-            <img class="logo__image image-tablet" src="img/logo-tablet.svg" width="112" height="46">
-            <img class="logo__image image-desktop" src="img/logo-desktop.svg" width="148" height="73">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="page-header__logo-image logo__image" src="img/logo-mobile.svg">
+          </picture>
           </a>
         </div>
 
@@ -56,9 +58,15 @@
           <ul class="products__list">
             <li class="products__item product">
               <a class="product__image-container" href="#">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-hare-desktop@1x.jpg">
+                  <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg">
+                  <img class="product__image" src="img/photo-hare-mobile@1x.jpg">
+                </picture>
+                <!--
                 <img class="product__image image-mobile" src="img/photo-hare-mobile@1x.jpg" width="260" height="195">
                 <img class="product__image image-tablet" src="img/photo-hare-tablet@1x.jpg" width="334" height="334">
-                <img class="product__image image-desktop" src="img/photo-hare-desktop@1x.jpg" width="316" height="462">
+                <img class="product__image image-desktop" src="img/photo-hare-desktop@1x.jpg" width="316" height="462"> -->
               </a>
 
               <div class="product__info">
@@ -79,9 +87,11 @@
 
             <li class="products__item product">
               <a class="product__image-container" href="#">
-                <img class="product__image image-mobile" src="img/photo-bowl-mobile@1x.jpg" width="260" height="195">
-                <img class="product__image image-tablet" src="img/photo-bowl-tablet@1x.jpg" width="334" height="334">
-                <img class="product__image image-desktop" src="img/photo-bowl-desktop@1x.jpg" width="316" height="462">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-bowl-desktop@1x.jpg">
+                  <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg">
+                  <img class="product__image" src="img/photo-bowl-mobile@1x.jpg">
+                </picture>
               </a>
 
               <div class="product__info">
@@ -102,9 +112,11 @@
 
             <li class="products__item product">
               <a class="product__image-container" href="#">
-                <img class="product__image image-mobile" src="img/photo-toys-mobile@1x.jpg" width="260" height="195">
-                <img class="product__image image-tablet" src="img/photo-toys-tablet@1x.jpg" width="334" height="334">
-                <img class="product__image image-desktop" src="img/photo-toys-desktop@1x.jpg" width="316" height="462">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-toys-desktop@1x.jpg">
+                  <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg">
+                  <img class="product__image" src="img/photo-toys-mobile@1x.jpg">
+                </picture>
               </a>
 
               <div class="product__info">
@@ -125,9 +137,11 @@
 
             <li class="products__item video-container">
               <h2 class="video-container__title">Процесс производства</h2>
-              <img class="video-container__video image-mobile" src="img/video-mobile@1x.jpg" width="260" height="150">
-              <img class="video-container__video image-tablet" src="img/video-tablet@1x.jpg" width="668" height="455">
-              <img class="video-container__video image-desktop" src="img/video-desktop@1x.jpg" width="682" height="455">
+              <picture>
+                  <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg">
+                  <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg">
+                  <img class="video-container__video" src="img/video-mobile@1x.jpg">
+              </picture>
               <p class="video-container__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о     том, как появляются наши товары.
               </p>
               <a class="button video-container__button" href="#">Сделать заказ</a>

@@ -66,6 +66,11 @@
     background-size: auto, contain;
     background-position: top left, bottom;
     height: 542px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/review@2x.jpg"), url("../img/bg-zigzag-line.svg");
+      background-size: 350px auto, contain;
+    }
   }
 
   .reviews__wrapper {
