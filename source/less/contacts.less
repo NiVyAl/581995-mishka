@@ -95,8 +95,8 @@
 @media (min-width: @desktop-width) {
   .contacts {
     .wrapper();
-    margin-top: 70px; // временно
-    margin-bottom: 130px; // временно
+    //margin-top: 70px; // временно
+    //margin-bottom: 130px; // временно
     align-items: flex-start;
   }
 
@@ -108,22 +108,32 @@
   .contacts__map {
     order: -1;
     align-self: flex-end;
+    margin-top: 76px;
   }
 
   .contacts__table,
   .contacts__title {
     padding: 0;
-    width: 300px;
+    //width: 300px;
   }
 
   .contacts__title {
-    margin-top: -400px;
-    padding-left: 175px;
-    background-position: 60px 0;
+    font-size: 53px;
+    line-height: 57px;
+    margin-top: -397px;
+    padding-left: 170px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    background-position: 64px 0;
   }
 
-  .contacts__table,
   .contacts__button {
     margin-left: 175px;
+    margin-top: 45px;
+    margin-bottom: 105px;
+  }
+
+  .contacts__table {
+    margin-left: 170px;
   }
 }
