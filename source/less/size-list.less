@@ -1,0 +1,38 @@
+.size-list {
+  .list-style-reset();
+  width: 260px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.size-list__button {
+  width: 78px;
+  height: 48px;
+  display: flex;
+  font-size: 17px;
+  font-weight: bold;
+  border: 2px solid #ececec;
+  align-items: center;
+  justify-content: center;
+}
+
+.size-list__button:hover {
+  border-color: #c7c7c7;
+}
+
+.s:checked ~ .size-list__button[for="s"],
+.m:checked ~ .size-list__button[for="m"],
+.l:checked ~ .size-list__button[for="l"] {
+  border-color: @green;
+}
+
+@media (min-width: @tablet-width) {
+  .size-list {
+    width: 350px;
+  }
+
+  .size-list__button {
+    width: 108px;
+    height: 48px;
+  }
+}

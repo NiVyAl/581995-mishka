@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
     <link href="css/style.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <script src="js/picturefill.js"></script>
   </head>
   <body>
@@ -118,17 +119,17 @@
             <ul class="order-form__list order-form__list--text">
               <li class="order-form__item order-form__item--text">
                 <label class="order-form__label order-form__label--text" for="name">Имя:</label>
-                <input class="order-form__text-input" type="text" id="name" placeholder="Введите ваше имя*">
+                <input class="order-form__text-input" type="text" id="name" placeholder="Введите ваше имя*" required>
               </li>
 
               <li class="order-form__item order-form__item--text">
                 <label class="order-form__label order-form__label--text" for="surname">Фамилия:</label>
-                <input class="order-form__text-input" type="text" id="surname" placeholder="Укажите фамилию*">
+                <input class="order-form__text-input" type="text" id="surname" placeholder="Укажите фамилию*" required>
               </li>
 
               <li class="order-form__item order-form__item--text">
                 <label class="order-form__label order-form__label--text" for="patronymic">Отчество:</label>
-                <input class="order-form__text-input" type="text" id="patronymic" placeholder="Отчество, если желаете">
+                <input class="order-form__text-input" type="text" id="patronymic" placeholder="Отчество, если желаете" required>
               </li>
             </ul>
           </section>
@@ -137,7 +138,7 @@
             <h2 class="order-form__title">Тел</h2>
             <ul class="order-form__list order-form__list--text">
               <li class="order-form__item">
-                <input class="order-form__text-input order-form__text-input--phone" type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+                <input class="order-form__text-input order-form__text-input--phone" type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
               </li>
             </ul>
           </section>
@@ -146,7 +147,7 @@
             <h2 class="order-form__title">e-mail</h2>
             <ul class="order-form__list order-form__list--text">
               <li class="order-form__item">
-                <input class="order-form__text-input order-form__text-input--mail" type="email" placeholder="Ваш Email*">
+                <input class="order-form__text-input order-form__text-input--mail" type="email" placeholder="Ваш Email*" required>
               </li>
             </ul>
           </section>
@@ -155,7 +156,7 @@
             <h2 class="order-form__title">доп</h2>
             <ul class="order-form__list order-form__list--text">
               <li class="order-form__item">
-                <textarea class="order-form__text-input order-form__text-input--textarea" rows="10" cols="20" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+                <textarea class="order-form__text-input order-form__text-input--textarea" rows="10" cols="20" placeholder="Опишите все ваши пожелания к заказу" required></textarea>
               </li>
             </ul>
           </section>
