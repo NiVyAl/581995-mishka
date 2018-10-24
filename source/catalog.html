@@ -8,6 +8,10 @@
     <script src="js/picturefill.js"></script>
   </head>
   <body>
+    <div style="display:none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+
     <div class="wrap">
       <header class="page-header">
         <div class="page-header__logo">
@@ -15,7 +19,7 @@
           <picture>
             <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-            <img class="page-header__logo-image logo__image" src="img/logo-mobile.svg">
+            <img class="page-header__logo-image logo__image" src="img/logo-mobile.svg" alt="logo">
           </picture>
           </a>
         </div>
@@ -61,14 +65,14 @@
             <li class="products__item product">
               <a class="product__image-container" href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-hare-desktop@1x.webp 1x, img/photo-hare-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.webp 1x, img/photo-hare-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-hare-mobile@1x.webp, img/photo-hare-mobile@2x.webp 2x">
+
                   <source media="(min-width: 1200px)" srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
-                  <img class="product__image" src="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-mobile@2x.jpg 2x">
+                  <img class="product__image" src="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-mobile@2x.jpg 2x" alt="hare">
                 </picture>
-                <!--
-                <img class="product__image image-mobile" src="img/photo-hare-mobile@1x.jpg" width="260" height="195">
-                <img class="product__image image-tablet" src="img/photo-hare-tablet@1x.jpg" width="334" height="334">
-                <img class="product__image image-desktop" src="img/photo-hare-desktop@1x.jpg" width="316" height="462"> -->
               </a>
 
               <div class="product__info">
@@ -90,9 +94,13 @@
             <li class="products__item product">
               <a class="product__image-container" href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-bowl-desktop@1x.webp 1x, img/photo-bowl-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.webp 1x, img/photo-bowl-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-bowl-mobile@1x.webp, img/photo-bowl-mobile@2x.webp 2x">
+
                   <source media="(min-width: 1200px)" srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
-                  <img class="product__image" src="img/photo-bowl-mobile@1x.jpg" srcset="img/photo-bowl-mobile@2x.jpg 2x">
+                  <img class="product__image" src="img/photo-bowl-mobile@1x.jpg" srcset="img/photo-bowl-mobile@2x.jpg 2x" alt="bowl">
                 </picture>
               </a>
 
@@ -115,9 +123,13 @@
             <li class="products__item product">
               <a class="product__image-container" href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-toys-desktop@1x.webp 1x, img/photo-toys-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.webp 1x, img/photo-toys-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-toys-mobile@1x.webp, img/photo-toys-mobile@2x.webp 2x">
+
                   <source media="(min-width: 1200px)" srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
-                  <img class="product__image" src="img/photo-toys-mobile@1x.jpg" srcset="img/photo-toys-mobile@2x.jpg 2x">
+                  <img class="product__image" src="img/photo-toys-mobile@1x.jpg" srcset="img/photo-toys-mobile@2x.jpg 2x" alt="toys">
                 </picture>
               </a>
 
@@ -139,12 +151,18 @@
 
             <li class="products__item video-container">
               <h2 class="video-container__title">Процесс производства</h2>
-              <picture class="video-container__video" >
+              <div class="video-container__video">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/video-mobile@1x.webp, img/video-mobile@2x.webp 2x">
+
                   <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
-                  <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x">
+                  <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="video">
                   <button class="video-container__play-button play-button"></button>
-              </picture>
+                </picture>
+              </div>
               <p class="video-container__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о     том, как появляются наши товары.
               </p>
               <a class="button video-container__button" href="#">Сделать заказ</a>
@@ -157,35 +175,55 @@
     <footer class="page-footer">
       <div class="wrap page-footer__wrap">
         <a class="page-footer__logo logo" href="index.html">
-            <img class="page-footer__logo-image logo__image" src="img/logo-footer.svg" width="102" height="34">
+            <img class="page-footer__logo-image logo__image" src="img/logo-footer.svg" width="102" height="34" alt="logo">
         </a>
 
         <ul class="page-footer__social social">
           <li class="social__item">
             <a class="social__link social-link social-link--instagram" href="#">
-              <img class="social__image" src="img/icon-insta.svg" width="22" height="21">
+              <img class="social__image" src="img/icon-insta.svg" width="22" height="21" alt="instagram">
             </a>
           </li>
 
           <li class="social__item">
             <a class="social__link social-link social-link--facebook" href="#">
-              <img class="social__image" src="img/icon-fb.svg" width="15" height="28">
+              <img class="social__image" src="img/icon-fb.svg" width="15" height="28" alt="facebook">
             </a>
           </li>
 
           <li class="social__item">
             <a class="social__link social-link social-link--twitter" href="#">
-              <img class="social__image" src="img/icon-twitter.svg" width="23" height="20">
+              <img class="social__image" src="img/icon-twitter.svg" width="23" height="20" alt="twitter">
             </a>
           </li>
         </ul>
 
         <div class="page-footer__copyright copyright">
           <b class="copyright__text">Разработано</b>
-          <a class="copyright__link"><img src="img/logo-htmlacademy.svg" width="27" height="34"></a>
+          <a class="copyright__link"><img src="img/logo-htmlacademy.svg" width="27" height="34" alt="academy logo"></a>
         </div>
       </div>
     </footer>
+
+    <div class="modal">
+      <h2 class="modal__title">Добавить в корзину</h2>
+      <p class="modal__text">Выберите размер:</p>
+      <ul class="modal__list size-list">
+        <li class="size-list__item">
+          <input class="visual-hidden s" type="radio" id="s" name="size" checked>
+          <label class="size-list__button" for="s">S</label>
+        </li>
+        <li class="size-list__item">
+          <input class="visual-hidden m" type="radio" id="m" name="size">
+          <label class="size-list__button" for="m">M</label>
+        </li>
+        <li class="size-list__item">
+          <input class="visual-hidden l" type="radio" id="l" name="size">
+          <label class="size-list__button" for="l">L</label>
+        </li>
+      </ul>
+      <button class="button modal__button">Добавить</button>
+    </div>
 
     <script src="js/script.js"></script>
   </body>
