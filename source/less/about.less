@@ -23,15 +23,43 @@
 .about__item {
   width: 100%;
   padding-top: 83px;
-  //padding-right: 50px;
   box-sizing: border-box;
   font-size: 17px;
   font-weight: bold;
-  //width: 215px;
-  background-repeat: no-repeat;
-  background-position: 8px 30px;
+  //background-repeat: no-repeat;
+  //background-position: 8px 30px;
+  position: relative;
 }
 
+.about__icon {
+  position: absolute;
+  top: 30px;
+  left: 8px;
+}
+
+.about__icon--money {
+  left: 0;
+}
+
+.about__icon--rocket {
+  top: 20px;
+  left: -6px;
+}
+
+.about__icon--heart {
+  top: 35px;
+}
+
+.about__icon--ball {
+  top: 34px;
+  left: 5px;
+}
+
+.about__icon--gift {
+  left: 5px;
+}
+
+/*
 .about__item--flower {
   background-image: url("../img/icon-feature-flower.svg");
 }
@@ -61,7 +89,7 @@
 .about__item--gift {
   background-image: url("../img/icon-feature-gift.svg");
   background-position: 0 30px;
-}
+}*/
 
 @media (min-width: @tablet-width) {
   .about {
