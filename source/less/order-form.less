@@ -161,16 +161,25 @@
   border-color: @green;
 }
 
+.order-form__text-input:hover ~ .order-form__icon,
+.order-form__text-input:valid ~ .order-form__icon {
+  fill: @green;
+}
+
 .order-form__title--name-input {
   margin-bottom: 2px;
 }
-
+/*
 .order-form__text-input--phone,
 .order-form__text-input--mail {
   background-repeat: no-repeat;
   background-position: right center;
-}
+}*/
 
+.order-form__item {
+  position: relative;
+}
+/*
 .order-form__text-input--phone {
   background-image: url("../img/icon-phone.svg");
   background-position: 228px center;
@@ -179,6 +188,20 @@
 .order-form__text-input--mail {
   background-image: url("../img/icon-mail.svg");
   background-position: 225px center;
+}*/
+
+.order-form__icon {
+  position: absolute;
+}
+
+.order-form__icon--phone {
+  top: 12px;
+  left: 228px;
+}
+
+.order-form__icon--mail {
+  top: 8px;
+  left: 225px;
 }
 
 .order-form__text-input--textarea {
@@ -346,12 +369,12 @@
     padding-top: 28px;
   }
 
-  .order-form__text-input--phone {
-    background-position: 450px center;
+  .order-form__icon--phone {
+    left: 450px;
   }
 
-  .order-form__text-input--mail {
-    background-position: 448px center;
+  .order-form__icon--mail {
+    left: 448px;
   }
 
   .order-form__text-input--textarea {
@@ -398,12 +421,12 @@
     width: 700px;
   }
 
-  .order-form__text-input--phone {
-    background-position: 670px center;
+  .order-form__icon--phone {
+    left: 670px;
   }
 
-  .order-form__text-input--mail {
-    background-position: 665px center;
+  .order-form__icon--mail {
+    left: 665px;
   }
 
   .order-form__footer {
