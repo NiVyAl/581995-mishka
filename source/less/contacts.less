@@ -2,7 +2,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px 0;
+  //padding: 40px 0;
+  padding-bottom: 39px;
 }
 
 .contacts__title {
@@ -10,18 +11,21 @@
   font-size: 18px;
   line-height: 30px;
   align-self: flex-start;
+  margin-top: 36px;
+  margin-bottom: 0;
 }
 
 .contacts__table {
   .wrapper();
   color: @greyish-brown;
-  margin-bottom: 40px;
   font-size: 15px;
+  line-height: 30px;
   word-break: keep-all;
+  margin-top: 23px;
 }
 
 .contacts__button {
-  margin-top: 40px;
+  margin-top: 38px;
 }
 
 .contacts__field {
@@ -30,11 +34,27 @@
 
 .contacts__value {
   vertical-align: baseline;
-  padding-right: 30px;
-  padding-bottom: 40px;
+  //padding-right: 30px;
+  //padding-bottom: 40px;
+  width: 75px;
+  //flex-basis: 75px;
+  //flex-shrink: 0;
+}
+
+.contacts__value,
+.contacts__field {
+  padding-bottom: 28px;
+}
+
+.contacts__map {
+  margin-top: 7px;
 }
 
 @media (min-width: @tablet-width) {
+  .contacts {
+    padding-bottom: 58px;
+  }
+
   .contacts__table tbody {
     display: flex;
     justify-content: space-between;
@@ -43,23 +63,42 @@
   .contacts__title {
     font-size: 43px;
     line-height: 50px;
-    height: 82px;
+    //height: 82px;
     background-image: url("../img/icon-flag.svg");
     background-repeat: no-repeat;
-    background-position: 650px 0;
+    background-position: 668px 0;
     width: 100%;
+    margin-top: 46px;
+    padding-top: 15px;
+    padding-bottom: 17px;
   }
 
   .contacts__field {
     padding-right: 40px;
+  }
+
+  .contacts__table {
+    font-size: 17px;
+    line-height: 30px;
+    padding: 0;
+    margin-top: 28px;
+  }
+
+  .contacts__map {
+    margin-top: 22px;
+  }
+
+  .contacts__button {
+    width: 230px;
+    margin-top: 55px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .contacts {
     .wrapper();
-    margin-top: 70px; // временно
-    margin-bottom: 130px; // временно
+    //margin-top: 70px; // временно
+    //margin-bottom: 130px; // временно
     align-items: flex-start;
   }
 
@@ -71,22 +110,32 @@
   .contacts__map {
     order: -1;
     align-self: flex-end;
+    margin-top: 76px;
   }
 
   .contacts__table,
   .contacts__title {
     padding: 0;
-    width: 300px;
+    //width: 300px;
   }
 
   .contacts__title {
-    margin-top: -400px;
-    padding-left: 175px;
-    background-position: 60px 0;
+    font-size: 53px;
+    line-height: 57px;
+    margin-top: -397px;
+    padding-left: 170px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    background-position: 64px 0;
   }
 
-  .contacts__table,
   .contacts__button {
     margin-left: 175px;
+    margin-top: 45px;
+    margin-bottom: 105px;
+  }
+
+  .contacts__table {
+    margin-left: 170px;
   }
 }

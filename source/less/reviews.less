@@ -1,16 +1,19 @@
 .reviews {
   .wrapper();
   .buttom-zigzag-line();
+  padding-bottom: 50px;
 }
 
 .reviews__wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .reviews__title {
   font-size: 25px;
+  margin-top: 7px;
+  margin-bottom: 0;
 }
 
 .reviews__item {
@@ -18,13 +21,15 @@
 
   width: 100%;
   display: block; /* чтоб занимал все доступное место */
-  margin-bottom: 36px;
+  margin-bottom: 0;
 }
 
 .reviews__text {
   color: @greyish-brown;
   font-size: 15px;
   line-height: 30px;
+  margin-top: 22px;
+  margin-bottom: 0;
 }
 
 .reviews__author {
@@ -32,6 +37,8 @@
   line-height: 24px;
   font-weight: bold;
   font-style: normal;
+  margin-top: 27px;
+  margin-bottom: 0;
   display: block; // чтоб был перенос на новую строку
 }
 
@@ -44,6 +51,7 @@
 .reviews__toggle {
   font-size: 0;
   text-align: center;
+  margin-top: 32px;
 }
 
 .reviews__button {
@@ -53,9 +61,19 @@
 
 @media (min-width: @tablet-width) {
   .reviews {
-    background-image: url("../img/review@1x.jpg");
+    background-image: url("../img/review@1x.jpg"), url("../img/bg-zigzag-line.svg");
     background-repeat: no-repeat;
-    background-position: left;
+    background-size: auto, contain;
+    background-position: top left, bottom;
+    //height: 542px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/review@2x.jpg"), url("../img/bg-zigzag-line.svg");
+      background-size: 350px auto, contain;
+    }
+
+    padding-top: 70px;
+    padding-bottom: 134px;
   }
 
   .reviews__wrapper {
@@ -73,27 +91,50 @@
 
   .reviews__button {
     order: -1;
-    width: 171px;
-    height: 48px;
-    margin-top: 0;
+    width: 175px;
+    height: 50px;
+    margin-top: 10px;
   }
 
   .reviews__toggle {
     position: absolute;
     right: 0;
-    bottom: 30px;
+    bottom: 8px;
   }
-}
 
-@media (min-width: @tablet-width) {
-  .reviews {
-    padding-top: 70px;
-    padding-bottom: 100px;
+  .reviews__text {
+    font-size: 17px;
+    line-height: 30px;
+    margin-top: 45px;
+  }
+
+  .reviews__author {
+    margin-top: 60px;
+    font-size: 18px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .reviews {
     padding-left: 225px; //временно
+    padding-top: 63px;
+    background-position: 50px 0, bottom;
+  }
+
+  .reviews__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .reviews__button {
+    margin-top: 17px;
+  }
+
+  .reviews__text {
+    width: 770px;
+  }
+
+  .reviews__author {
+    margin-top: 42px;
   }
 }

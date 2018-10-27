@@ -1,19 +1,23 @@
 .copyright {
-  &:hover {
-    opacity: 0.6;
-  }
-
   &:active {
     opacity: 0.3;
   }
   text-align: center;
 }
 
+.copyright:hover .copyright__text {
+  opacity: 0.6;
+}
+
+.copyright:hover .copyright__image {
+  fill: #46c1ae;
+}
+
 .copyright__text {
   font-size: 19px;
   line-height: 18px;
   display: inline-block;
-  margin-right: 30px;
+  margin-right: 25px;
 }
 
 .copyright__link {
@@ -21,6 +25,13 @@
   vertical-align: middle;
 }
 
-.copyright__link img {
+.copyright__image {
   display: block;
+  fill: @green;
+}
+
+@media (min-width: @tablet-width) {
+  .copyright__text {
+    margin-left: 15px;
+  }
 }

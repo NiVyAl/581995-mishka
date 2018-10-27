@@ -1,8 +1,7 @@
-/* суда шрифты! */
 body {
   padding: 0;
   margin: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   min-width: 320px;
   //margin: 0 auto;
   font-style: normal;
@@ -18,11 +17,15 @@ img { // чтоб картинки не выползали за родителе
   margin: 0 auto;
 }
 
-.image-tablet {
-  display: none;
+.visual-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
-.image-desktop {
+.none {
   display: none;
 }
 
@@ -30,26 +33,10 @@ img { // чтоб картинки не выползали за родителе
   .wrap {
     width: 768px;
   }
-
-  .image-tablet {
-    display: block;
-  }
-
-  .image-mobile {
-    display: none;
-  }
 }
 
 @media (min-width: @desktop-width) {
   .wrap {
     width: 1150px;
-  }
-
-  .image-tablet {
-    display: none;
-  }
-
-  .image-desktop {
-    display: block;
   }
 }

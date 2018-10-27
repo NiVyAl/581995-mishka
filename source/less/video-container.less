@@ -1,38 +1,62 @@
 .video-container {
-  width: 260px;
-  height: 500px;
+  width: 100%;
+  //height: 500px;
   box-sizing: border-box;
   border: 1px solid #ededed;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  &:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
 }
 
 .video-container__title {
   font-size: 17px;
-  padding: 15px 0;
+  margin-top: 24px;
+  //padding: 15px 0;
   padding-left: 90px;
+  margin-bottom: 27px;
   background-image: url("../img/icon-video.svg");
   background-repeat: no-repeat;
-  background-position: 40px;
+  background-position: 34px;
 }
 
 .video-container__description {
   font-size: 13px;
+  line-height: 24px;
   color: @greyish-brown;
-  padding: 0 35px;
-  margin-top: 30px;
+  padding: 0 34px;
+  margin-top: 25px;
 }
 
 .video-container__button {
   width: 192px;
-  margin-top: 30px;
+  margin-top: 10px;
+  margin-bottom: 33px;
+}
+
+.video-container__video {
+  position: relative;
+}
+
+.video-container__play-button {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
 }
 
 @media (min-width: @tablet-width) {
   .video-container {
-    width: 100%;
-    height: 745px;
+    //height: 745px;
   }
 
   .video-container__video {
@@ -42,12 +66,27 @@
   .video-container__title,
   .video-container__description,
   .video-container__button {
-    width: 580px;
+    width: 584px;
   }
 
   .video-container__title {
     font-size: 20px;
     align-self: flex-start;
+    margin-top: 30px;
+    padding-left: 105px;
+    background-position: 40px center;
+  }
+
+  .video-container__description {
+    font-size: 15px;
+    line-height: 30px;
+    margin-top: 5px;
+    margin-bottom: 0;
+  }
+
+  .video-container__button {
+    margin-top: 35px;
+    margin-bottom: 45px;
   }
 }
 
@@ -57,19 +96,21 @@
     width: 100%;
     height: 456px;
     position: relative;
-    padding-left: 750px;
+    padding-left: 760px;
   }
 
   .video-container__title {
     padding: 0;
-    padding-top: 40px;
+    padding-top: 55px;
     background-position: top left;
-    margin-top: 50px;
+    margin-top: 40px;
+    line-height: 24px;
   }
 
   .video-container__video {
     position: absolute;
     left: 0;
+    top: 0;
   }
 
   .video-container__description {
@@ -81,5 +122,8 @@
   .video-container__button {
     width: 230px;
   }
+
+  .video-container__button {
+    margin-top: 45px;
+  }
 }
-//230

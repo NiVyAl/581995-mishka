@@ -1,37 +1,72 @@
 .about {
   .wrapper();
   padding-bottom: 30px;
+  //padding-top: 8px;
 }
 
 .about__title {
   font-size: 25px;
   line-height: 30px;
+  margin-top: 28px;
+  margin-bottom: 0;
 }
 
 .about__list {
   .list-style-reset();
   display: flex;
   flex-direction: column;
+  margin-top: 2px;
+  font-size: 17px;
+  line-height: 20px;
 }
 
 .about__item {
   width: 100%;
-  padding-top: 85px;
-  padding-right: 50px;
+  padding-top: 83px;
   box-sizing: border-box;
   font-size: 17px;
   font-weight: bold;
-  //width: 215px;
-  background-repeat: no-repeat;
-  background-position: 8px 30px;
+  //background-repeat: no-repeat;
+  //background-position: 8px 30px;
+  position: relative;
 }
 
+.about__icon {
+  position: absolute;
+  top: 30px;
+  left: 8px;
+}
+
+.about__icon--money {
+  left: 0;
+}
+
+.about__icon--rocket {
+  top: 20px;
+  left: -6px;
+}
+
+.about__icon--heart {
+  top: 35px;
+}
+
+.about__icon--ball {
+  top: 34px;
+  left: 5px;
+}
+
+.about__icon--gift {
+  left: 5px;
+}
+
+/*
 .about__item--flower {
   background-image: url("../img/icon-feature-flower.svg");
 }
 
 .about__item--money {
   background-image: url("../img/icon-feature-money.svg");
+  background-position: 0 30px;
 }
 
 .about__item--heart {
@@ -44,6 +79,7 @@
 
 .about__item--rocket {
   background-image: url("../img/icon-feature-rocket.svg");
+  background-position: 0 30px;
 }
 
 .about__item--flag {
@@ -52,25 +88,31 @@
 
 .about__item--gift {
   background-image: url("../img/icon-feature-gift.svg");
-}
+  background-position: 0 30px;
+}*/
 
 @media (min-width: @tablet-width) {
   .about {
-    padding-bottom: 80px;
+    padding-bottom: 38px;
   }
 
   .about__title {
     font-size: 43px;
     line-height: 50px;
+    margin-top: 49px;
   }
 
   .about__list {
     flex-direction: row;
     flex-wrap: wrap;
+    margin-top: 20px;
   }
 
   .about__item {
     width: 50%;
+    margin-bottom: 28px;
+    font-size: 20px;
+    line-height: 22px;
   }
 
   /* чтоб были в нужной последовательности */
@@ -94,5 +136,16 @@
 @media (min-width: @desktop-width) {
   .about {
     padding-left: 225px; // временно
+    padding-bottom: 45px;
+  }
+
+  .about__title {
+    font-size: 53px;
+    line-height: 57px;
+    margin-top: 57px;
+  }
+
+  .about__list {
+    width: 700px;
   }
 }

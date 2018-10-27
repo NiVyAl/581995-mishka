@@ -1,4 +1,9 @@
+.products {
+  padding-bottom: 56px;
+}
+
 .products__list {
+  margin: 0;
   .list-style-reset();
   .wrapper();
   display: flex;
@@ -12,14 +17,24 @@
 }
 
 @media (min-width: @tablet-width) {
+  .products {
+    padding-top: 24px;
+    padding-bottom: 63px;
+  }
+
   .products__item {
-    margin-top: 55px;
+    margin-top: 54px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .products {
-    padding-bottom: 60px;
+    padding-top: 72px;
+    padding-bottom: 103px;
+  }
+
+  .products__item {
+    margin-top: 57px;
   }
 
   .products__list {
