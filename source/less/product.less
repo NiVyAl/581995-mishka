@@ -61,8 +61,20 @@
   width: 20px;
   height: 20px;
   display: block;
-  background-image: url("../img/icon-cart.svg");
-  background-repeat: no-repeat;
+  //background-image: url("../img/icon-cart.svg");
+  //background-repeat: no-repeat;
+}
+
+.product__icon {
+  fill: #d3d2d2;
+}
+
+.product__cart-button:hover .product__icon {
+  fill: @green;
+}
+
+.product__cart-button:active {
+  opacity: 0.3;
 }
 
 .product__image {

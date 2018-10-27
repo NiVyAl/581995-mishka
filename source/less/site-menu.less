@@ -10,7 +10,11 @@
 
 .site-menu__item {
   border-top: 1px solid #ececec;
-  height: 80px;
+  height: 78px;
+}
+
+.site-menu__item:first-child {
+  border-top: 0;
 }
 
 .site-menu__link {
@@ -21,7 +25,7 @@
   display: flex;
   text-align: left;
   align-items: center;
-  padding-left: 85px;
+  padding-left: 75px;
   position: relative;
 
   //background-repeat: no-repeat;
@@ -42,11 +46,12 @@
 
 .site-menu__icon {
   position: absolute;
-  top: 35px;
+  top: 30px;
   left: 30px;
   margin: auto;
   width: 18px;
   height: 18px;
+  fill: #d3d2d2;
 }
 
 
@@ -123,6 +128,10 @@
     display: flex;
     margin-left: auto;
     margin-right: 0;
+  }
+
+  .site-menu__icon {
+    top: 35px;
   }
 }
 
