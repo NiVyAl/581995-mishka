@@ -65,12 +65,15 @@
     background-repeat: no-repeat;
     background-size: auto, contain;
     background-position: top left, bottom;
-    height: 542px;
+    //height: 542px;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/review@2x.jpg"), url("../img/bg-zigzag-line.svg");
       background-size: 350px auto, contain;
     }
+
+    padding-top: 70px;
+    padding-bottom: 134px;
   }
 
   .reviews__wrapper {
@@ -108,13 +111,6 @@
   .reviews__author {
     margin-top: 60px;
     font-size: 18px;
-  }
-}
-
-@media (min-width: @tablet-width) {
-  .reviews {
-    padding-top: 70px;
-    padding-bottom: 100px;
   }
 }
 

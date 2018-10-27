@@ -13,13 +13,15 @@
     </div>
     <div class="wrap">
       <header class="page-header">
-        <a class="page-header__logo logo" href="#">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
-            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-            <img class="page-header__logo-image logo__image" src="img/logo-mobile.svg" alt="logo">
-          </picture>
-        </a>
+        <div class="page-header__logo">
+          <a class="logo" href="#">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img class="page-header__logo-image logo__image" src="img/logo-mobile.svg" alt="logo">
+            </picture>
+          </a>
+        </div>
 
         <button class="toggle-button page-header__toggle" onclick="menuOpen()">
           Открыть меню
