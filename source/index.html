@@ -6,6 +6,7 @@
     <link href="css/style.min.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <script src="js/picturefill.js"></script>
+    <link rel="preload" href="/fonts/opensans.woff2" as="font">
   </head>
   <body>
     <div style="display:none">
@@ -23,7 +24,7 @@
           </a>
         </div>
 
-        <button class="toggle-button page-header__toggle" onclick="menuOpen()">
+        <button class="toggle-button page-header__toggle" onclick="menuOpen()" type="button">
           Открыть меню
         </button>
 
@@ -198,10 +199,10 @@
               </blockquote>
             </div>
 
-            <p class="reviews__toggle slider__toggles">
-              <button class="arrow arrow--left">назад</button>
-              <button class="arrow arrow--right">вперед</button>
-            </p>
+            <div class="reviews__toggle slider__toggles">
+              <button class="arrow arrow--left" type="button">назад</button>
+              <button class="arrow arrow--right" type="button">вперед</button>
+            </div>
 
             <a class="button reviews__button" href="#">Написать</a>
           </div>
@@ -214,7 +215,7 @@
             <tr>
               <td class="contacts__value">e-mail:</td>
               <td class="contacts__field">
-              <a class="mail-link" href="#">info@mimimishkashop.ru</a></td>
+              <a class="mail-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></td>
             </tr>
             <tr>
               <td class="contacts__value">адрес:</td>
@@ -233,7 +234,7 @@
 
     <footer class="page-footer">
       <div class="wrap page-footer__wrap">
-        <a class="page-footer__logo logo" href="index.html">
+        <a class="page-footer__logo logo">
           <svg class="logo__image logo__image--footer" width="102" height="34">
             <use xlink:href="#icon-logo-footer"></use>
           </svg>
@@ -267,7 +268,7 @@
 
         <div class="page-footer__copyright copyright">
           <b class="copyright__text">Разработано</b>
-          <a class="copyright__link" href="#">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <svg class="copyright__image" width="27" height="34">
               <use xlink:href="#icon-logo-htmlacademy"></use>
             </svg>
@@ -294,7 +295,7 @@
             <label class="size-list__button" for="l">L</label>
           </li>
         </ul>
-        <button class="button modal__button" onclick="openBasketModal()">Добавить</button>
+        <button class="button modal__button" onclick="openBasketModal()" type="button">Добавить</button>
       </div>
     </div>
 

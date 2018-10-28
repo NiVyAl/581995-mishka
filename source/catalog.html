@@ -6,6 +6,7 @@
     <link href="css/style.min.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <script src="js/picturefill.js"></script>
+    <link rel="preload" href="/fonts/opensans.woff2" as="font">
   </head>
   <body>
     <div style="display:none">
@@ -24,7 +25,7 @@
           </a>
         </div>
 
-        <button class="toggle-button page-header__toggle" onclick="menuOpen()">
+        <button class="toggle-button page-header__toggle" onclick="menuOpen()" type="button">
           Открыть меню
         </button>
 
@@ -194,9 +195,9 @@
                   <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
                   <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="video">
                 </picture>
-                <button class="video-container__play-button play-button"></button>
+                <button class="video-container__play-button play-button" type="button"></button>
               </div>
-              <p class="video-container__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о     том, как появляются наши товары.
+              <p class="video-container__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
               </p>
               <a class="button video-container__button" href="#">Сделать заказ</a>
             </li>
@@ -241,7 +242,7 @@
 
         <div class="page-footer__copyright copyright">
           <b class="copyright__text">Разработано</b>
-          <a class="copyright__link" href="#">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <svg class="copyright__image" width="27" height="34">
               <use xlink:href="#icon-logo-htmlacademy"></use>
             </svg>
@@ -268,7 +269,7 @@
             <label class="size-list__button" for="l">L</label>
           </li>
         </ul>
-        <button class="button modal__button" onclick="openBasketModal()">Добавить</button>
+        <button class="button modal__button" onclick="openBasketModal()" type="button">Добавить</button>
       </div>
     </div>
 

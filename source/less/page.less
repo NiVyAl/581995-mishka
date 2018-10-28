@@ -50,6 +50,7 @@
     background-position: center top;
     background-size: 1150px auto;
     padding-top: 155px;
+    position: relative;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/hero-tablet@2x.jpg");
@@ -63,10 +64,12 @@
       display: block;
       position: absolute;
       left: 0;
-      top: 735px;
+      //top: 735px;
+      bottom: -15px;
       background-image: url("../img/bg-zigzag-fill.svg");
       background-size: contain;
       background-repeat: repeat-x;
+      z-index: 2;
     }
   }
 }

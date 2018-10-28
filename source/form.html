@@ -6,6 +6,7 @@
     <link href="css/style.min.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <script src="js/picturefill.js"></script>
+    <link rel="preload" href="/fonts/opensans.woff2" as="font">
   </head>
   <body>
     <div style="display:none">
@@ -24,7 +25,7 @@
           </a>
         </div>
 
-        <button class="toggle-button page-header__toggle" onclick="menuOpen()">
+        <button class="toggle-button page-header__toggle" onclick="menuOpen()" type="button">
           Открыть меню
         </button>
 
@@ -160,7 +161,8 @@
             <h2 class="order-form__title">Тел</h2>
             <ul class="order-form__list order-form__list--text">
               <li class="order-form__item">
-                <input class="order-form__text-input" type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+                <label class="visual-hidden" for="phone">Телефон</label>
+                <input class="order-form__text-input" type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" id="phone" required>
                 <svg class="order-form__icon order-form__icon--phone" width="25" height="24">
                   <use xlink:href="#icon-phone"></use>
                 </svg>
@@ -172,7 +174,8 @@
             <h2 class="order-form__title">e-mail</h2>
             <ul class="order-form__list order-form__list--text">
               <li class="order-form__item">
-                <input class="order-form__text-input" type="email" placeholder="Ваш Email*" required>
+                <label class="visual-hidden" for="email">email</label>
+                <input class="order-form__text-input" type="email" placeholder="Ваш Email*" required id="email">
                 <svg class="order-form__icon order-form__icon--mail" width="32" height="32">
                   <use xlink:href="#icon-mail"></use>
                 </svg>
@@ -184,7 +187,8 @@
             <h2 class="order-form__title">доп</h2>
             <ul class="order-form__list order-form__list--text">
               <li class="order-form__item">
-                <textarea class="order-form__text-input order-form__text-input--textarea" rows="10" cols="20" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+                <label class="visual-hidden" for="additional">дополнительно</label>
+                <textarea class="order-form__text-input order-form__text-input--textarea" rows="10" cols="20" placeholder="Опишите все ваши пожелания к заказу" id="additional"></textarea>
               </li>
             </ul>
           </section>
@@ -233,7 +237,7 @@
 
         <div class="page-footer__copyright copyright">
           <b class="copyright__text">Разработано</b>
-          <a class="copyright__link" href="#">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <svg class="copyright__image" width="27" height="34">
               <use xlink:href="#icon-logo-htmlacademy"></use>
             </svg>
