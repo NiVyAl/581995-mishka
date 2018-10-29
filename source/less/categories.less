@@ -79,6 +79,21 @@
     margin-top: -119px;
     font-size: 20px;
     line-height: 30px;
+
+    &::after {
+      content: "";
+      width: 100%;
+      height: 25px;
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: -15px;
+      //top: 735px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-size: contain;
+      background-repeat: repeat-x;
+      z-index: 2;
+    }
   }
 
   .categories__link {
@@ -119,6 +134,10 @@
 }
 
 @media (min-width: @desktop-width) {
+  .categories::after {
+    height: 35px;
+  }
+
   .categories__link {
     padding-right: 370px;
   }
