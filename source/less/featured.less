@@ -14,18 +14,20 @@
   margin-bottom: 0;
 }
 
-.featured__title--best::after,
-.featured__title--best::before {
-  font-size: 17px;
-  color: #63d1bb;
-  line-height: 20px;
-  text-transform: uppercase;
-  display: inline-block;
-  vertical-align: middle;
-}
+.featured__title--best {
+  &::before,
+  &::after {
+    font-size: 17px;
+    color: #63d1bb;
+    line-height: 20px;
+    text-transform: uppercase;
+    display: inline-block;
+    vertical-align: middle;
+  }
 
-.featured__title--best::after {
-  content: "товар недели";
+  &::after {
+    content: "товар недели";
+  }
 }
 
 .featured__text {
@@ -93,16 +95,18 @@
     margin-top: 45px;
   }
 
-  .featured__title--best::after,
-  .featured__title--best::before {
-    text-align: center;
-    width: 80px;
-    vertical-align: middle;
-    line-height: 17px;
-  }
+  .featured__title--best {
+    &::before,
+    &::after {
+      text-align: center;
+      width: 80px;
+      vertical-align: middle;
+      line-height: 17px;
+    }
 
-  .featured__title--best::after {
-    margin-left: 140px;
+    &::after {
+      margin-left: 140px;
+    }
   }
 
   .featured__text,
@@ -115,8 +119,6 @@
   .featured__image {
     align-self: flex-end;
     order: -1;
-    width: 333px;
-    height: 404px;
     display: block;
     margin-top: 57px;
   }
@@ -158,13 +160,15 @@
     justify-content: flex-end;
   }
 
-  .featured__title--best::after {
-    display: none;
-  }
+  .featured__title--best {
+    &::before {
+      content: "Товар недели";
+      margin: 0 45px;
+    }
 
-  .featured__title--best::before {
-    content: "Товар недели";
-    margin: 0 45px;
+    &::after {
+      display: none;
+    }
   }
 
   .featured__text,
@@ -184,11 +188,6 @@
 
   .featured__price {
     margin-top: 113px;
-  }
-
-  .featured__image {
-    width: 525px;
-    height: 636px;
   }
 
   .featured__button {
