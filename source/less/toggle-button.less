@@ -7,25 +7,27 @@
   background-color: transparent;
 }
 
-.toggle-button--close::before,
-.toggle-button--close::after {
-  content: "";
-  width: 28px;
-  height: 2px;
-  display: block;
-  background-color: black;
-  position: absolute;
-  left: -4px;
-  top: 50%;
-  margin-top: -1px;
-}
+.toggle-button--close {
+  &::before,
+  &::after {
+    content: "";
+    width: 28px;
+    height: 2px;
+    display: block;
+    background-color: black;
+    position: absolute;
+    left: -4px;
+    top: 50%;
+    margin-top: -1px;
+  }
 
-.toggle-button--close::before {
-  transform: rotate(45deg);
-}
+  &::before {
+    transform: rotate(45deg);
+  }
 
-.toggle-button--close::after {
-  transform: rotate(-45deg);
+  &::after {
+    transform: rotate(-45deg);
+  }
 }
 
 .toggle-button--open {
