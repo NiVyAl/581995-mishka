@@ -157,6 +157,7 @@
   box-sizing: border-box;
   border-bottom: 2px solid black;
   background-color: transparent;
+  font-family: "Open Sans", "Arial", sans-serif;
 
   &:hover,
   &:focus {
@@ -166,6 +167,11 @@
   &:hover ~ .order-form__icon,
   &:focus ~ .order-form__icon {
     fill: @green;
+  }
+
+  &::placeholder {
+    color: #c7c7c7;
+    font-size: 19px;
   }
 }
 

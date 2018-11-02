@@ -1,12 +1,9 @@
 .copyright {
   text-align: center;
+  display: block;
 
   &:active {
     opacity: 0.3;
-  }
-
-  &:hover .copyright__text {
-    opacity: 0.6;
   }
 
   &:hover .copyright__image {
@@ -22,17 +19,20 @@
 }
 
 .copyright__link {
-  display: inline-block;
-  vertical-align: middle;
+  display: block;
+  margin: 0;
+  text-decoration: none;
+  color: black;
 }
 
 .copyright__image {
-  display: block;
+  display: inline-block;
   fill: @green;
+  vertical-align: middle;
 }
 
 @media (min-width: @tablet-width) {
-  .copyright__text {
+  .copyright__link {
     margin-left: 15px;
   }
 }
